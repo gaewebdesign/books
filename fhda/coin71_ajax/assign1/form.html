@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- 
+Author: Elaine Haight 
+Class/Section: COIN 71 Spring '07 
+Date Created: 30 Jan 07 
+Demonstrates data and value in elements and textNodes 
+--> 
+ 
+<head> 
+   <title> Your title goes here </title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+ 
+</head> 
+ 
+<body> 
+<script language="JavaScript" >
+function Calculate( )
+{
+   
+   alert("hello");
+}
+
+function Cal()
+{
+	var msg="";
+	var pnode = document.getElementById("kilo");
+	msg += pnode.getAttribute("value") ;
+	msg += "\n";
+
+    alert(msg);
+
+}
+</script>
+ <form action="Cal()" method ="post">
+<input type="text" id="kilo" size="5" maxlength="10"  name="kilobox" >
+&nbsp;&nbsp;&nbsp;
+<input type="text" size="5" maxlength="10" value="mph", name="milesbox" >
+<input type="button" value="Convert to mph">
+<!--
+ onClick="Cal();" > 
+-->
+</form>
+ 
+ 
+</body> 
+ 
+</html> 

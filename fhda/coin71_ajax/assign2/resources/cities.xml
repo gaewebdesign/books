@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!-- cities.xml
+	Elaine Haight
+    COIN 71 - Spring 2007
+    Partial List of Cities in 3 states -->
+<us>
+	<state name="California">
+		<city> Alameda</city>
+		<city> Albany</city>
+		<city> Calaveras</city>
+		<city> Angel's Camp</city>
+	</state>
+	<state name="Oregon">
+		<city> Bend</city>
+		<city> Portland</city>
+		<city> Eugene</city>
+	</state>
+	<state name="Washington">
+		<city> Seattle</city>
+		<city> Spokane</city>
+		<city> Olympia</city>
+		<city> Bellingham</city>
+	</state>
+</us>

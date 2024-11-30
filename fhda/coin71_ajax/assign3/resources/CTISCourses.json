@@ -1,0 +1,135 @@
+var CTISCourses = {
+"departments":
+[
+	{
+		"name": "CIS",
+		"courses" :
+		[
+			{
+				"number": "15A",
+				"description": "Introduction to programming with C++"
+			},
+			{
+				"number": "15B",
+				"description" : "Intermediate programming with C++"
+			},
+			{
+				"number" : "15C",
+				"description": "Data Structures with C++"
+			},
+			{
+				"number" : "27A",
+				"description": "Introduction to programming with Java"
+			},
+			{
+				"number" : "27B",
+				"description" : "Intermediate programming with Java"
+			},
+			{
+				"number" : "27C",
+				"description" : "Data Structures with Java"
+			},
+			{
+				"number": "27P",
+				"description": "Java for Programmers"
+			},
+			{
+				"number" : "12A",
+				"description" : "Fundamentals of Visual Basic.Net"
+			},
+			{
+				"number" : "12C",
+				"description" : "Designing with Visual Basic"
+			},
+			{	
+				"number" : "52A",
+				"description" : "Introduction to Data Management Systems"
+			},
+			{	
+				"number" : "52B",
+				"description" : "Oracle SQL"
+			},
+			{
+				"number" : "52E",
+				"description" : "Oracle Database Administration I"
+			}
+		]
+	},
+	{	"name": "COIN",
+		"courses" : 
+		[
+			{
+				"number": "61",
+				"description" : "Publishing on the Web Using HTML/XHTML"
+			},
+			{	"number": "63",
+				"description" : "Advanced Topics in Web Publishing"
+			},
+			{
+				"number": "65",
+				"description" : "Using Cascading Stylesheets"
+			},
+			{
+				"number" : "70A",
+				"description" : "Introduction to programming using JavaScript"
+			},
+			{
+				"number" : "70B",
+				"description" : "Using JavaScript"
+			},
+			{	
+				"number" : "71",
+				"description" : "Application Software Development with Ajax"
+			},
+			{ 	
+				"number": "72",
+				"description" : "Web Marketing"
+			},
+			{
+				"number" : "74A",
+				"description" : "DreamWeaver Basics"
+			},
+			{	"number": "76",
+				"description" : "Web Publishing Tools: Multimedia"
+			},
+			{
+				"number" : "78",
+				"description" : "Extensible Markup Language"
+			}
+		]
+	},
+	{	"name" : "CAST",
+		"courses" : 
+		[
+			{	
+				"number" : "52A",
+				"description" : "Introduction to Macromedia Flash"
+			},
+			{
+				"number" : "52B",
+				"description" : "Advanced Macromedia Flash"
+			},
+			{	
+				"number" : "52P",
+				"description" : "Intermediate Flash: Projects"
+			},
+			{
+				"number" : "70J",
+				"description" : "Introduction to Adobe Premier Elements"
+			},
+			{
+				"number" : "86A",
+				"description" : "Introduction to Adobe Indesign"
+			},
+			{
+				"number" : "90A",
+				"description" : "Introduction to Adobe Illustrator"
+			},
+			{	"number" : "92A",
+				"description" : "Introduction to Adobe Photoshop"
+			}
+		]
+	}
+]
+}
+			

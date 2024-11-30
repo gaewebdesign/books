@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- 
+Author: Elaine Haight 
+Class/Section: COIN 71 Spring '07 
+Date Created: 30 Jan 07 
+Demonstrates data and value in elements and textNodes 
+--> 
+ 
+<head> 
+   <title> Your title goes here </title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+   <script language = 'JavaScript' type = 'text/javascript'> 
+ 
+function makeButton() 
+{ 
+
+
+ var divNode = document.getElementById("empty");  
+ var textNode = document.createTextNode("Hello"); 
+  
+ var buttonNode = document.createElement("Button"); 
+ buttonNode.setAttribute("onclick", "alert('Convert');"); 
+  
+ buttonNode.appendChild(textNode); 
+ divNode.appendChild(buttonNode); 
+} 
+ 
+ 
+function addNode(parent, element, nameId, text) 
+{ var newNode = document.createElement(element); 
+ parent.appendChild(newNode); 
+ newNode.setAttribute("id", nameId); 
+ newNode.setAttribute("name", nameId); 
+ newNode.value="45";
+/*
+ if (text != "") 
+ { var textNode = document.createTextNode(text); 
+  newNode.appendChild(textNode); 
+ } 
+ */
+ return newNode; 
+}  
+
+function makeStuff( pnode )
+{
+
+//var pnode = document.getElementById("empty");
+addNode( pnode , "text" ,"kilobox" , "23" );
+
+}
+
+
+window.onload=function() 
+{ 
+ 
+ var pnode= document.getElementById("empty");
+ 
+ makeStuff( pnode);
+// makeButton(); 
+} 
+
+	   
+		  
+/*			 
+				   
+ window.onload=function()  
+ { var msg=null; 
+  var pnode = document.getElementById("roger"); 
+  msg = "pnode.getAttribute('value') = " +pnode.getAttribute('value')+"\n"; 
+  msg += "pnode.name =" + pnode.getAttribute('name');
+//  msg += "pnode.data = " + pnode.data + "\n"; 
+//  msg += "pnode.nodeValue = " + pnode.nodeValue + "\n"; 
+//  msg += "pnode.firstChild.value = " + pnode.firstChild.value + "\n"; 
+ // msg += "pnode.firstChild.data = " + pnode.firstChild.nodeValue + "\n"; 
+//  msg += "pnode.firstChild.nodeValue= " + pnode.firstChild.nodeValue + "\n"; 
+  alert (msg); 
+ 
+ //   alert("Nirvana");
+ } 
+ 
+ */
+  
+ /* Here is the output in the alert box for both Firefox and Safari: 
+ pnode.getAttribute('value') = pvalue 
+ pnode.data = undefined 
+ pnode.nodeValue = null 
+ pnode.firstChild.value = undefined 
+ pnode.firstChild.data =  This is between p tags  
+ pnode.firstChild.nodeValue =  This is between p tags  
+ */ 
+  
+   </script> 
+</head> 
+ 
+<body> 
+Convert km/hr 
+ <div id="empty" </div>
+ to mph
+</body> 
+ 
+</html> 

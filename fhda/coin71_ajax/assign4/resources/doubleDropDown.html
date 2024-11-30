@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+Author: Elaine Haight
+Class/Section: COIN 71 Ajax
+Date Created: 25 Jan 2007
+filename: doubleDropDown.html
+Double drop down lists. This shows a drop down of states,
+then shows a second drop down with the cities.
+Reads a JSON file once to get all the data.
+requires: cities.json
+&copy
+-->
+
+<head>
+	<title>Fill Double Drop Down</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script language="JavaScript" type="text/javascript" src="cities.json" > </script>
+	<script language="JavaScript" type = 'text/javascript' src="doubleDropDown.js"> </script>
+	<link rel="stylesheet" href="doubleDropDown.css" type="text/css" />
+</head>
+
+<body>
+	<div id = "browseCities">
+	
+		<select id = "selectState">
+		<option> </option>
+		</select>
+		
+		<select id = "selectCity">
+		<option> </option>
+		</select>
+		
+	</div>
+</body>
+</html>

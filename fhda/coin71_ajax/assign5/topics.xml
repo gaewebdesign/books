@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+ <list> 
+
+
+<item>
+<topic>World Capitals</topic>
+<question>What is the capital of XXX ?</question>
+<query>SELECT Name FROM world.City where id = (SELECT Capital FROM world.Country WHERE Name = XXX);</query>
+</item>
+
+<item>
+<topic>World Continents</topic>
+<question>What continent contains the country XXX? </question> 
+<query>SELECT Continent FROM world.Country WHERE Name = XXX; </query>
+</item>
+
+<item>
+<topic>World Languages</topic>
+<question>Name a language spoken in XXX</question>
+<query>SELECT Language FROM world.CountryLanguage WHERE CountryCode= (SELECT Code FROM world.Country WHERE Name = XXX );</query>
+</item>
+
+<item>
+<topic>World Population</topic>
+<question>Name a city in XXX that has over 1,000,000 people </question>
+<query>SELECT Name FROM world.City WHERE Population >1000000 AND CountryCode = (SELECT Code FROM world.Country WHERE Name = XXX);</query>
+</item>
+
+
+ </list>

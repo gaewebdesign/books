@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- 
+Author: Roger Okamoto  
+Class/Section: COIN 71 Spring '07 
+Date Created:  May 5, 2007  (Assignment 3)
+Demonstrates   
+--> 
+ 
+<head> 
+   <title> Geography Quiz </title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script language='JavaScript' type = 'text/javascript' src='ContentLoader.js'> </script>
+   <script language = 'JavaScript' type = 'text/javascript' src='library.js'> </script>
+<script>
+function go()
+{
+   TopicRadioButton( );
+   SubmitButton( );
+   AnswerTextBox( );
+   
+   
+   GetAnswerButton( );
+}
+
+
+function SubmitButton( )
+{
+   var pnode,theNode;
+   
+   var pnode = document.getElementById("submitButton");
+   
+   theNode = addNode(pnode, "button", "SubmitButtonName", "Generate Topic Question","GetQuestion();");
+
+
+
+}
+
+function GetQuestion( )
+{
+
+  toLine('questionTag', "Happy Days Here Again");
+
+
+}
+
+
+function GetAnswer( )
+{
+
+ toLine("getanswerTag","this is where the answer goes... ");
+
+}
+
+function GetAnswerButton( )
+{
+
+   var pnode,theNode;
+   
+   var pnode = document.getElementById("getanswerButton");
+   
+   theNode = addNode(pnode, "button", "GetAnswerButtonName", "Get the Answer");
+   theNode.onclick = GetAnswer;
+
+
+}
+
+
+function TopicRadioButton( )
+{
+    var pnode;
+	var breakElement;
+    var theNode;
+	
+	var topics = new Array( 'World Capitals' , 'World Countries', 'World Languages', 'World Population');
+	
+	// Get the pnode location in the html file
+	pnode=document.getElementById('topic');
+	
+	for(i=0 ; i < topics.length ; i++){
+	
+	 // Add a radio button
+     theNode = addNode(pnode, 'input', topic,23');	
+	 theNode.type = 'radio';
+	 if(i==0) theNode.checked = "true";	 
+	 
+	 // Add the text and a line break
+	 addNode(pnode,"text","Country", topics[i]);
+	 breakElement = document.createElement('br');
+	 pnode.appendChild( breakElement );
+			
+	}
+	
+	
+}
+
+function GetRadioButtonSelected( )
+{
+
+      var pnode;
+	  
+	  pnode = get document.getElementById("topic");
+
+
+}
+
+
+
+function AnswerTextBox( )
+{
+
+   var pnode=document.getElementById("pid");
+
+   addNode(pnode, "input", "answer","23");						// input text box
+//   addNode(pnode,"text","textNode"," kph ","" );				// simple textnode (kph)
+
+
+
+}
+
+
+window.onload=function()
+{	
+  go( );
+}
+
+</script>
+
+</head> 
+ 
+<body> 
+
+
+ 
+Select your topic for World Geography <br>
+ <p id = "topic" >   </p> 
+
+ <p id = "submitButton"> </p>
+ 
+ <p id = "questionTag"> </p>
+
+ <p id = "pid" value = "pvalue" name = "pname">  
+  Type Your Answer 
+ </p> 
+  
+ <p id = "getanswerButton"> </p>
+
+ 
+ <p id = "getanswerTag"> </p>
+
+<!-- console debugging information goes here -->
+<p id = "console" >  
+</p> 
+</body> 
+ 
+</html> 

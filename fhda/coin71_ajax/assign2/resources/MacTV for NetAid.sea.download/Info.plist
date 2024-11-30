@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DownloadEntryAliasBlob</key>
+	<data>
+	AAAAAAH+AAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAADAXChYSCsAAAAoqusU
+	TWFjVFYgZm9yIE5ldEFpZC5zZWEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAACiq7AAAAABBUFBMYXVzdP////8AAAkgAAAAAAAAAAAAAAAAAAAA
+	HU1hY1RWIGZvciBOZXRBaWQuc2VhLmRvd25sb2FkAAAQAAgAAMBcisgAAAARAAgAAAAA
+	AAAAAAABABQAKKrrACikSgAoOJ8AJ2gbAAebhQACAGJNYWNpbnRvc2ggSEQ6RE9XTkxP
+	QURTOkNPSU43MTphc3NpZ24yOnJlc291cmNlczpNYWNUViBmb3IgTmV0QWlkLnNlYS5k
+	b3dubG9hZDpNYWNUViBmb3IgTmV0QWlkLnNlYQAOACoAFABNAGEAYwBUAFYAIABmAG8A
+	cgAgAE4AZQB0AEEAaQBkAC4AcwBlAGEADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABI
+	AEQAEgBVRE9XTkxPQURTL0NPSU43MS9hc3NpZ24yL3Jlc291cmNlcy9NYWNUViBmb3Ig
+	TmV0QWlkLnNlYS5kb3dubG9hZC9NYWNUViBmb3IgTmV0QWlkLnNlYQAAEwABLwD//wAA
+	</data>
+	<key>DownloadEntryErrorCodeDictionaryKey</key>
+	<integer>-999</integer>
+	<key>DownloadEntryErrorDomainDictionaryKey</key>
+	<string>NSURLErrorDomain</string>
+	<key>DownloadEntryIdentifier</key>
+	<string>DFFA263D-A6EA-432B-B2FA-9D6099B31CA8</string>
+	<key>DownloadEntryPath</key>
+	<string>/DOWNLOADS/COIN71/assign2/resources/MacTV for NetAid.sea.download/MacTV for NetAid.sea</string>
+	<key>DownloadEntryProgressBytesSoFar</key>
+	<integer>678656</integer>
+	<key>DownloadEntryProgressTotalToLoad</key>
+	<integer>678656</integer>
+	<key>DownloadEntryURL</key>
+	<string>ftp://ftpeng.cisco.com/netaid_i2/MacTV_for_NetAid.sea.bin</string>
+</dict>
+</plist>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<ctis_courses> 
+
+<department name = "CIS">
+	<course number = "15A" >
+		Introduction to programming with C++
+	</course>
+	<course number = "15B" >
+		Intermediate programming with C++
+	</course>
+	<course number = "15C" >
+		Data Structures with C++
+	</course>
+	<course number = "27A" >
+		Introduction to programming with Java
+	</course>
+	<course number = "27B" >
+		Intermediate programming with Java
+	</course>
+	<course number = "27C" >
+		Data Structures with Java
+	</course>
+	<course number = "27P" >
+		Java for Programmers
+	</course>
+	<course number = "12A" >
+		Fundamentals of Visual Basic.Net
+	</course>
+	<course number = "12C" >
+		Designing with Visual Basic 
+	</course>
+	<course number = "52A" >
+		Introduction to Data Management Systems
+	</course>
+	<course number = "52B" >
+		Oracle SQL
+	</course>
+	<course number = "52E" >
+		Oracle Database Administration I
+	</course>
+</department>
+
+<department name = "COIN">
+	<course number = "61" >
+		Publishing on the Web Using HTML/XHTML
+	</course>
+	<course number = "63" >
+		Advanced Topics in Web Publishing
+	</course>
+	<course number = "65" >
+		Using Cascading Stylesheets
+	</course>
+	<course number = "70A" >
+		Introduction to programming using JavaScript
+	</course>
+	<course number = "70B" >
+		Using JavaScript
+	</course>
+	<course number = "71" >
+		Application Software Development with Ajax
+	</course>
+	<course number = "72" >
+		Web Marketing
+	</course>
+	<course number = "74A" >
+		DreamWeaver Basics
+	</course>
+	<course number = "76" >
+		Web Publishing Tools: Multimedia 
+	</course>
+	<course number = "78" >
+		Extensible Markup Language
+	</course>
+</department>
+
+<department name = "CAST">
+	<course number = "52A" >
+		Introduction to Macromedia Flash
+	</course>
+	<course number = "52B" >
+		Advanced Macromedia Flash
+	</course>
+	<course number = "52P" >
+		Intermediate Flash: Projects
+	</course>
+	<course number = "70J" >
+		Introduction to Adobe Premier Elements
+	</course>
+	<course number = "86A" >
+		Introduction to Adobe Indesign
+	</course>
+	<course number = "90A" >
+		Introduction to Adobe Illustrator
+	</course>
+	<course number = "92A" >
+		Introduction to Adobe Photoshop
+	</course>
+</department>
+
+</ctis_courses>

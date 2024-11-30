@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+Author: Elaine Haight
+Class/Section: COIN 71 Ajax
+Date Created: 22 Jan
+Tests the servlet that queries World.sql by sending in just one simple query.
+requires: ContentLoader.js
+-->
+
+<head>
+	<title>Test the World database</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    
+    <script language="JavaScript" type="text/javascript" src="ContentLoader.js" >
+    </script>
+
+	<script language="JavaScript" type="text/javascript">
+
+// This query (without the "q=") worked on my local SQL world database
+var QUERY = "q=SELECT Language FROM world.CountryLanguage WHERE CountryCode= (SELECT Code FROM world.Country WHERE Name = 'united states');";
+
+// The url of the php servlet that takes an SQL query for the world db and returns an
+// XML document with the reply.
+var URL = "http://krypton.fhda.edu/ajax/worldquery.php";
+
+// creates the ContentLoader object that contains the query and sends it along to the servlet
+function makeAndSendQuery()
+{	var contentLoader = new net.ContentLoader(URL, makeAnswerBox, errorFunction, "POST", QUERY);
+}
+
+// Display the response from the servlet. Because makeAnswerBox is the callback function for the 
+// ContentLoader object, it is ContentLoader that calls this function when the response is ready. 
+// Therefore, "this" refers to the ContentLoader object, which has the attribute "req.responseText".
+function makeAnswerBox()
+{	var divTag = document.getElementById("answer");
+	divTag.firstChild.nodeValue += this.req.responseText;
+	// Note that in your Assignment #5, you will want to look at req.responseXML
+}
+
+// called by the ContentLoader when there is an error with the request
+function errorFunction()
+{	var divTag = document.getElementById("answer");
+	divTag.firstChild.nodeValue += "ERROR ACCESSING DATABASE: " + this.req.responseText;
+}
+
+// puts the query into the window for the user to see and calls makeAndSendQuery
+window.onload=function()
+{	var divTag = document.getElementById("query");
+	divTag.firstChild.nodeValue += QUERY;
+	makeAndSendQuery();
+}
+
+    </script>
+    
+</head>
+
+<body>
+		<div name = "query" id = "query">Query:  </div>
+		<div name = "answer" id = "answer">Answer:  </div>
+</body>
+</html>

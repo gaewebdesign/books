@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- 
+Author: Elaine Haight 
+Class/Section: COIN 71 Spring '07 
+Date Created: 30 Jan 07 
+Demonstrates data and value in elements and textNodes 
+--> 
+ 
+<head> 
+   <title> Your title goes here </title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+   <script language = 'JavaScript' type = 'text/javascript'> 
+
+window.onload=init;
+
+
+function initAll()
+{
+
+//document.getElementsByTagName("form")[0].onsubmit = function(){return addNode();}
+document.getElementsByTagName("form")[0].onsubmit = function(){return Convert();}
+
+}
+
+function init()
+{
+
+ var pnode = document.getElementsByTagName("pnode");
+ //addNode( pnode, "textarea", "nameTE","23" );
+}
+
+
+function Convert()
+{
+ 
+ var kph = document.getElementById("textArea").value;
+
+ kph = ""+ kph * 54.66 /88;
+ 
+ // Assumes no one is interested in 0.9 kph
+ kph = kph.split(".");
+  
+ document.getElementById("textArea").value = "" + kph[0] ;
+
+
+}
+
+
+function addNode(parent, element, nameId, text)
+{ 
+ var newNode = document.createElement(element); 
+ parent.appendChild(newNode); 
+ newNode.setAttribute("id", nameId); 
+ newNode.setAttribute("name", nameId); 
+
+ if (text != "") 
+ { var textNode = document.createTextNode(text); 
+   newNode.appendChild(textNode); 
+ } 
+ 
+ return newNode; 
+} 
+
+
+
+
+function jaddNode(){
+var inText=document.getElementById("textArea").value;
+
+var newText=document.createTextNode(inText);
+
+var newGraf = document.createElement("p");
+newGraf.appendChild(newText);
+
+var docBody=document.getElementsByTagName("body")[0];
+docBody.appendChild( newGraf);
+
+return false;
+
+}
+
+
+   </script> 
+</head> 
+ 
+<body> 
+ <p id = "pnde" value = "pvalue" name = "pname">  
+  Convert to km/hr  
+ </p> 
+ 
+ --------------------------------------
+<!--
+<form action="#">
+<p> <textarea id = "textArea", rows="1" cols="10"</textarea>
+
+<input type="submit" value="Convert to mph" />
+</p>
+ 
+ </form>
+ -->
+</body> 
+ 
+</html> 

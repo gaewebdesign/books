@@ -1,0 +1,12 @@
+/* filename: doubleDropDown.css
+Styles doubleDropDown, COIN 71, Winter 2007
+double drop downs for Foothill CTIS departments, courses and descriptions
+*/
+body {	font-family: harrington, "zapf chancery", "apple chancery", impact, sans-serif;	 
+		font-weight: bold;
+	 }
+	 
+select {font-family: "comic sans ms", impact, sans-serif;
+		font-weight: normal;
+	}
+	

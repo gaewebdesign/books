@@ -1,0 +1,17 @@
+// filename: cities.json
+// Declares the USCities variable and fills it with data
+
+var USCities = {
+"states":
+[	
+	{	"stateName" : "California",
+		"cities" : ["Alameda", "Albany", "Calaveras", "Angel's Camp"]
+	},
+	{	"stateName" : "Oregon",
+		"cities" : ["Bend", "Portland", "Eugene"]
+	},
+	{	"stateName"  : "Washington",
+		"cities" : ["Seattle", "Spokane", "Olympia", "Bellingham"]
+	}
+]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Author: Elaine Haight
+Demostrates a simple JavaScript object called Rectangle, which stores a length and width.
+Rectangle also contains methods for setting its fields and printing its fields.
+Date Created: 1 Feb 07
+filename:objects.html
+-->
+
+<head>
+   <title> Your title goes here </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <script language = 'JavaScript' type = 'text/javascript'>
+  
+// Constructor function, creates the two fields and initializes them to 0
+Rectangle = function()
+{	this.length = 0;          // fields inside every Rectangle object
+	this.width = 0;
+}
+
+// Setter sets length to "l" and width to "w"
+Rectangle.prototype.setRectangle = function(l,w)   
+{	this.length = l;
+	this.width = w;
+}
+
+// Displays an alert box showing the length and width of the Rectangle
+Rectangle.prototype.showRectangle = function()
+{	var message = "length= " + this.length + "\nwidth= " + this.width;
+	alert(message);
+}
+
+// Demonstrates two Rectangle objects with different values inside them.
+window.onload = function()
+{	var rectangle1 = new Rectangle();
+	rectangle1.setRectangle(2,3);
+	rectangle1.showRectangle();
+	alert (rectangle1.length);     // all fields are public
+	var rectangle2 = new Rectangle();
+	rectangle2.setRectangle(5,6);
+	rectangle2.showRectangle();
+	rectangle1.showRectangle();    // rectangle1 still exists
+}
+   
+   </script>
+</head>
+</html>

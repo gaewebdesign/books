@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- 
+Author: Elaine Haight 
+Class/Section: COIN 71 Spring '07 
+Date Created: 30 Jan 07 
+Demonstrates data and value in elements and textNodes 
+--> 
+ 
+<head> 
+   <title> Your title goes here </title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+   <script language = 'JavaScript' type = 'text/javascript'> 
+    
+ window.onload= ajax;
+function ajax  ( )
+ { var msg=null; 
+  var pnode = document.getElementById("pid"); 
+  msg = "pnode.getAttribute('value') = " +pnode.getAttribute('value')+"\n"; 
+  msg += "pnode.data = " + pnode.data + "\n"; 
+  msg += "pnode.nodeValue = " + pnode.nodeValue + "\n"; 
+  msg += "pnode.firstChild.value = " + pnode.firstChild.value + "\n"; 
+  msg += "pnode.firstChild.data = " + pnode.firstChild.nodeValue + "\n"; 
+  msg += "pnode.firstChild.nodeValue= " + pnode.firstChild.nodeValue + "\n"; 
+ // alert (msg); 
+  addNode(pnode, 'textarea', 'newtxt', "10");
+  addNode(pnode, 'button' , 'submitbutton',"Convert to kilometers/hour");
+ } 
+  
+ /* Here is the output in the alert box for both Firefox and Safari: 
+ pnode.getAttribute('value') = pvalue 
+ pnode.data = undefined 
+ pnode.nodeValue = null 
+ pnode.firstChild.value = undefined 
+ pnode.firstChild.data =  This is between p tags  
+ pnode.firstChild.nodeValue =  This is between p tags  
+ */ 
+function addNode(parent, element, nameId, text) 
+{ var newNode = document.createElement(element); 
+ parent.appendChild(newNode); 
+ newNode.setAttribute("id", nameId); 
+ newNode.setAttribute("name", nameId); 
+ newNode.setAttribute("cols",5);
+ newNode.setAttribute("rows",1);
+ if (text != "") 
+ { var textNode = document.createTextNode(text); 
+  newNode.appendChild(textNode); 
+ } 
+ return newNode; 
+}    
+   </script> 
+</head> 
+ 
+<body> 
+ <p id = "pid" value = "pvalue" name = "pname">  
+  This is between p tags  
+ </p> 
+ <!--
+ <textarea name="txtmiles" cols="5", rows="1"> </textarea>
+ -->
+ <FORM action="http://somesite.com/prog/adduser" method="post">
+    <P>
+    <LABEL for="firstname">First name: </LABEL>
+              <INPUT type="text" id="firstname"><BR>
+    <LABEL for="lastname">Last name: </LABEL>
+              <INPUT type="text" id="lastname"><BR>
+    <LABEL for="email">email: </LABEL>
+              <INPUT type="text" id="email"><BR>
+    <INPUT type="radio" name="sex" value="Male"> Male<BR>
+    <INPUT type="radio" name="sex" value="Female"> Female<BR>
+    <INPUT type="submit" value="Send"> <INPUT type="reset">
+    </P>
+ </FORM>
+ 
+</body> 
+ 
+</html> 
