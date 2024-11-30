@@ -1,0 +1,308 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE address_book_nested SYSTEM "address_book_nested.dtd" >
+
+
+<!--address book using nested elements-->
+<address_book_nested>
+	<record ID="1">
+
+		<name>
+			<first_name>Justin</first_name>
+			<last_name>Henin-Hardanne</last_name>
+			<nick_name>Belgium Forehand</nick_name>
+			<sex>F</sex>
+		</name>
+		<game>
+				<worldranking>3</worldranking>
+				<strength>Mental toughness</strength>
+				<favoriteshot>Cross-court forehand</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2004 French Open</grandslam>
+				<grandslam>2006 French Open</grandslam>
+		</tournaments>
+		<address>
+			<street_address>19 </street_address>
+			<street_address_detail>Lausanne</street_address_detail>
+			<city>Antwerp</city>
+			<country>Brussels</country>
+		</address>
+		<contact>
+			<cell_phone>438-555-3745</cell_phone>
+			<fax_number>632-432-4932</fax_number>
+			<email_address>justin@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>2006 expected to be comeback year</misc_comments>
+		</comments>
+
+	</record>
+
+	<record ID="2">
+		<name>
+			<first_name>Amelie</first_name>
+			<last_name>Maueresmo</last_name>
+			<nick_name>Emmy</nick_name>
+			<sex>F</sex>
+		</name>
+		
+		<game>
+				<worldranking>1</worldranking>
+				<strength>Server and Volley</strength>
+				<favoriteshot>Backhand-Topspin,Slice,Flat</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2006 Australian </grandslam>
+				<grandslam>2006 Wimbledon </grandslam>
+		</tournaments>		
+		
+		<address>
+			<street_address>234</street_address>
+			<street_address_detail>Wimbledon</street_address_detail>
+			<city>St. Germains en Laye</city>
+			<country>France</country>
+		</address>
+		<contact>
+			<cell_phone>310-364-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>amelie@gmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>WTA #1 Player &amp; 2006 Wimbledon Champion</misc_comments>
+		</comments>
+	</record>
+	<record ID="3">
+		<name>
+			<first_name>Martina</first_name>
+			<middle_name></middle_name>
+			<last_name>Hingis</last_name>
+			<nick_name>Swiss Miss</nick_name>
+			<sex>F</sex>
+
+		</name>
+		<game>
+				<worldranking>12</worldranking>
+				<strength>Court Awareness</strength>
+				<favoriteshot>Cross court backhand</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>1998 Australian</grandslam>
+				<grandslam>1997 Wimbledon</grandslam>
+				<grandslam>1997 US Open</grandslam>
+				<grandslam>1997 Australian</grandslam>
+		</tournaments>			
+		<address>
+			<street_address>CH-9477</street_address>
+			<street_address_detail>Seidenbaum</street_address_detail>
+			<city>Trubbach</city>
+			<country> Switzerland</country>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>martina@yahoo.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>2006 back on tour after 3 year absence</misc_comments>
+		</comments>
+	</record>
+	<record ID="4">
+		<name>
+			<first_name>Maria</first_name>
+			<last_name>Sharapova</last_name>
+			<nick_name>The It Girl</nick_name>
+			<sex>F</sex>
+		</name>
+		
+		<game>
+				<worldranking>3</worldranking>
+				<strength>Service return, both sides</strength>
+				<favoriteshot>Two-handed backhand</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2004 Wimbledon </grandslam>
+		</tournaments>	
+				
+		<address>
+			<street_address>5500 </street_address>
+			<street_address_detail>34th St. W </street_address_detail>
+			<city>Bradenton</city>
+			<state>FL</state>
+			<zipcode>34210-3506</zipcode>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>mariasharapova@netscape.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>2006 is the year to prove that she still belongs in the top 5</misc_comments>
+		</comments>
+	</record>
+	<record ID="5">
+		<name>
+			<first_name>Lindsay</first_name>
+			<last_name>Davenport</last_name>
+			<nick_name>Sport</nick_name>
+			<sex>F</sex>
+		</name>
+		<game>
+				<worldranking>5</worldranking>
+				<strength>Power game</strength>
+				<favoriteshot>Approach forehand</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2004 Wimbledon </grandslam>
+		</tournaments>	
+		<address>
+			<street_address>1990</street_address>
+			<street_address_detail>Seaside</street_address_detail>
+			<city>Palos Verdes</city>
+			<state>California</state>
+			<zipcode>91128</zipcode>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>Lindsaydavenport@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>2001 Wimbledon Champion</misc_comments>
+		</comments>
+	</record>
+		<record ID="6">
+		<name>
+			<first_name>Roger</first_name>
+			<last_name>Federer</last_name>
+			<nick_name>Fed</nick_name>
+			<sex>M</sex>
+		</name>
+		<game>
+				<worldranking>1</worldranking>
+				<strength>Mental toughness</strength>
+				<favoriteshot>Top-spin forehand</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2006 Wimbledon </grandslam>
+				<grandslam>2005 Wimbledon </grandslam>
+				<grandslam>2005 US Open</grandslam>
+				<grandslam>2005 Australian</grandslam>
+				<grandslam>2004 Wimbledon </grandslam>
+				<grandslam>2003 Wimbledon </grandslam>
+		</tournaments>	
+		
+				<address>
+			<street_address>81990</street_address>
+			<street_address_detail>Olympia</street_address_detail>
+			<city>Oberwil</city>
+			<state>Switzerland</state>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>rogerfederer@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>Worlds #1 for 3 years</misc_comments>
+		</comments>
+	</record>
+	<record ID="7">
+		<name>
+			<first_name>Rafael</first_name>
+			<last_name>Nadal</last_name>
+			<nick_name>Rafa</nick_name>
+			<sex>M</sex>
+		</name>
+		<game>
+				<worldranking>3</worldranking>
+				<strength>Quickness,agility</strength>
+				<favoriteshot>Heavy topspin off both ground strokes</favoriteshot>		
+		</game>
+		<tournaments>
+				<grandslam>2006 French Open </grandslam>
+				<grandslam>2005 French Open </grandslam>
+		</tournaments>	
+
+		<address>
+			<street_address>1990</street_address>
+			<street_address_detail>Seaside</street_address_detail>
+			<city>Manacor </city>
+			<country>Mallorca</country>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>rafaelnadal@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>Established as the only competitor to Federer</misc_comments>
+		</comments>
+	</record>	
+	<record ID="8">
+		<name>
+			<first_name>David</first_name>
+			<last_name>Nalbandian</last_name>
+			<nick_name>Bandie</nick_name>
+			<sex>M</sex>
+		</name>
+		<game>
+				<worldranking>3</worldranking>
+				<strength>Serve and volley</strength>
+				<favoriteshot>Cross court volley </favoriteshot>		
+		</game>
+		<tournaments>
+				<upta>2006 US Clay Courts</upta>
+		</tournaments>
+
+		<address>
+			<street_address>10</street_address>
+			<street_address_detail>Golden Ave</street_address_detail>
+			<city>Cordoba</city>
+			<country>Argentina</country>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>davidnalbandian@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>Expected to break into top 5 in 2006</misc_comments>
+		</comments>
+	</record>	
+		
+		<record ID="9">
+		<name>
+			<first_name>James</first_name>
+			<last_name>Blake</last_name>
+			<nick_name>Sport</nick_name>
+			<sex>M</sex>
+		</name>
+		<game>
+				<worldranking>13</worldranking>
+				<strength>Service and volley</strength>
+				<favoriteshot>Backhand Slice</favoriteshot>	
+					
+		</game>
+		
+		<tournaments>
+				<upta>2005  River Oaks</upta>
+		</tournaments>
+
+			<address>
+			<street_address>870</street_address>
+			<street_address_detail>44th Ave</street_address_detail>
+			<city>Tampa</city>
+			<state>Florida</state>
+			<zipcode>91128</zipcode>
+		</address>
+		<contact>
+			<cell_phone>310-234-2343</cell_phone>
+			<fax_number>408-783-3188</fax_number>
+			<email_address>jamesblake@hotmail.com</email_address>
+		</contact>
+		<comments>
+			<misc_comments>Top US player</misc_comments>
+		</comments>
+	</record>
+</address_book_nested>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="address_book.xsl"?>
+<!--A simple address book linked to an XSL Stylesheet-->
+<address_book>
+	<record ID="1">
+		<name>
+			<heading>Name</heading>
+			<first>first name</first>
+			<last>last name</last>
+			<middle>middle name</middle>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street>street address</street>
+			<apt>apartment</apt>
+			<pobox>PO Box</pobox>
+			<city>city</city>
+			<state>state</state>
+			<zip>zip code</zip>
+		</address>
+		<contact>
+			<heading>Contact Info</heading>
+			<phone_home>(800) 555-1212</phone_home>
+			<phone_work>(800) 555-1212</phone_work>
+			<phone_cell>(800) 555-1212</phone_cell>
+			<email>user@whatever.com</email>
+			<website>http://www.whatever.com/</website>
+		</contact>
+		<details>
+			<heading>Misc. Details</heading>
+			<comment>comment</comment>
+			<dob>date of birth</dob>
+		</details>
+	</record>
+	<record ID="2">
+		<name>
+			<heading>Name</heading>
+			<first>first name</first>
+			<last>last name</last>
+			<middle>middle name</middle>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street>street address</street>
+			<apt>apartment</apt>
+			<pobox>PO Box</pobox>
+			<city>city</city>
+			<state>state</state>
+			<zip>zip code</zip>
+		</address>
+		<contact>
+			<heading>Contact Info</heading>
+			<phone_home>(800) 555-1212</phone_home>
+			<phone_work>(800) 555-1212</phone_work>
+			<phone_cell>(800) 555-1212</phone_cell>
+			<email>user@whatever.com</email>
+			<website>http://www.whatever.com/</website>
+		</contact>
+		<details>
+			<heading>Misc. Details</heading>
+			<comment>comment</comment>
+			<dob>date of birth</dob>
+		</details>
+	</record>
+</address_book>

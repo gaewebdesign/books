@@ -1,0 +1,115 @@
+1) What are the primary differences between XML and HTML? 
+   HTML is a static presentation or display of data (bold face, page break, tables).   
+   XML describes the data - (first name, last name, cost of an item).
+   
+2) Why was XML created? 
+   XML allows the transfer of information between machines (PC,Mac,Unix) in a platform independent manner,    whereas HTML just displays data.
+   
+3) What business problem does XML solve?
+   Cross platform description of data.
+    
+4) Is XML a language or meta-language? Explain 
+   XML is a meta-languge as  XML is never compiled
+
+5) What language was XML and HTML derived from? 
+    XML and HTML are derived from SGML (Standard Generalized Markup Language)
+
+6) Why does XML need to be human and machine readable? 
+   Makes reading the data easier as the format is well defined - as opposed to older data 
+   that could be in any binary format (little or big endian). 
+
+7) What are the three requirements for writing well formed XML? 
+   Every start tag must have a matching end tag, element may not overlap, one root element, attributes are quoted.
+
+8) What is the role of a DTD with XML? (Think valid XML)
+   DTD ensures that the XML document follows a specified format. 
+
+9) Write a very short DTD document 
+    Assignment #2
+
+10) What is the role of CSS with XML? 
+    CSS formats XML data
+
+11) Write very short CSS document 
+    Assignment #3
+
+12) What is the role of XSD with XML? (Think namespaces and datatypes) 
+    XSD defines the legal nodes of an XML document.  Based on a namespace, the valid values for elements are
+    governed by the XSD. For example, a node may be restricted to values in an enumeration (male,female), may be     optional or required or be required to be string, char or numeral.
+
+13) Write a very short XSD document
+    Assignment #4 
+
+14) Why are namespaces important to XSD? (Think about the Web as a database) 
+    Another namespace may be used in an XML document and the XSD for that namespace may be used to ensure that     the data is in the correct format for that namespace.
+    Equivalent to the concept of a library that may be linked into a C/C++ computer program.
+
+15) Compare and contrast DTDs with XSD
+    XSD provide finer control than DTDs over the format of XML documents. DTS provide validation over element
+    nesting, element occurrence constraints, permitted attributes, types and default values.  XSD includes
+    simple and complex data types. type derivation and inheritance and element occurrence constraints.
+ 
+
+16) Compare and contrast CSS with XSLT 
+    CSS describes how each node is to be displayed in a browser.  XSLT allows XML to be transformed into 
+    another XML format or into HTML tags for display.
+
+
+17) What is XSL or XSLT? 
+    XSLT is used to transform XML in one format to either another XML format or into HTML
+    
+18) What is XLink and XPointer? 
+    XLink attaches links to XML Documents similar to the HTML <a> tag 
+    XPointer identifes locations within XML documents similar to the HTML # tag.
+
+19) What is RDF? 
+	Resources Description Framework -describes a resource with a property and a value.
+
+20) What is EAI? Why is XML useful in EAI? 
+    Enterprise Application Integration - intra business solution to combine different applications.  XML is     used to transfer data between applications, schema transformation and metadata management.
+    
+21) Compare and contrast middleware with EAI 
+    Middleware is a solution to solve the interaction of applications that were not designed to work with     each other.  XML is one standard to have applications together.  EAI uses messaging, XML, brokers among     other methods to exchange data between programs.
+
+22) How do Microsoft and Sun use XML? 
+    Microsoft uses XML as the standard format for applications to exchange data- XML is integral to web         services.   Sun uses XML in a similar fashion.  Java is equivalent to C# (or vice-versa) and has XML processing apis.
+    
+23) What is UDDI, and why is it important? What is SOA? 
+    Universal Description,Discovery and Integration helps programs locate SOAP Web Services.
+    SOA is Server-oriented architecture.
+    
+24) What are Web services, SOAP, and WSDL, and how do they incorporate XML? 
+    Web services are web-based apis that are published for anyone to use.  The apis are unique 
+    to a particular web site.  The web services may perform several arbitary functions, anything from 
+    returning the statistics for a baseball player, or the available of VOD movies (video-on-demand)
+
+25) What is the Semantic Web? Discuss RDF and Web 2.0 as needed 
+    The semantic web is a project to make web sites understandable by other computers instead of just being
+    human readable html based web pages. The Semantic web allows computers to seek out information distributed      throughout the web.
+
+26)Bonus: In 300 to 400 words total (one page single spaced more or less), answer all three of the following:
+
+27) XML is easier to learn and use than HTML
+    XML is more complex and powerfull than HTML so its there's more to learn.  Also to really uss XML, one         should know a programming language, either C# or Java
+
+28)Will XML completely replace HTML (soon or ever?)
+    Can never say never - probably something will replace both.  Without HTML, a browser can't display information.  Without XML, data can't be easily transferred between computers.  Each needs the other.  In the long run in order to get disparate computers working together, XML is more important.  HTML could be replaced with a different mark-up language.
+
+How will you use XML? Please be specific and tell me more about your career and interests.
+Using XML for transmitting data via a C# program to process data and report the results from one program to another. Using XSLT to present the data results in a browser.  Also adding  some web services work to automate testing process.   Eventually will like to learn to use Java and XML and eventually AJAX.
+
+Hints - you get 1 point for questions 1 -25, and 5 points for the bonus question. I'm looking for short answers in the first 25 questions, then your imagination in the bonus question. The total possible score is thus 30 points, out of 25 for the assignment.
+
+If you can't find an answer then you haven't learned to use http://searchwebservices.techtarget.com/, whatis.com or Google.com. Also try http://www.xml.com/ , http://www.xml.org/ or http://builder.com.com/ but remember that whatis.com will be hyperlinked to other subjects.
+
+Good luck!
+
+Please attempt the bonus question as it works in your favor, and it affects the entire exam score. This is due on or about June 6th, 2006.
+
+
+--------------------------------------------------------------------------------
+
+Click here to return to the course outline.
+
+Last revision July 1, 2006
+

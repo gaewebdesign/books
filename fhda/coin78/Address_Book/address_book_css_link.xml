@@ -1,0 +1,164 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="address_book_link.css"?>
+<address_book xmlns:html="http://www.w3.org/TR/REC-html40">
+	<record ID="1">
+		<name>
+			<first_name>first name</first_name>
+			<middle_name>middle name</middle_name>
+			<last_name>last name</last_name>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street_address>street address goes here</street_address>
+			<street_address_detail>apartment number goes here</street_address_detail>
+			<city>city goes here</city>
+			<state>state goes here</state>
+			<zipcode>zipcode goes here</zipcode>
+		</address>
+		<contact>
+			<heading>Contact Information</heading>
+			<home_phone>home phone goes here</home_phone>
+			<work_phone>work phone goes here</work_phone>
+			<cell_phone>cell phone goes here</cell_phone>
+			<fax_number>fax number goes here</fax_number>
+			<email_address>email address goes here</email_address>
+		</contact>
+		<Internet>
+		<heading>Internet</heading>
+		<website><html:a href="http://www.whatever.com">www.whatever.com</html:a></website>
+		<email_address><html:a href="mailto:user@whatever.com">user@whatever.com</html:a></email_address>
+		</Internet>
+		<comments>
+			<heading>Comments</heading>
+			<misc_comments>comments go here</misc_comments>
+		</comments>
+	</record>
+	<record ID="2">
+		<name>
+			<first_name>first name</first_name>
+			<middle_name>middle name</middle_name>
+			<last_name>last name</last_name>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street_address>street address goes here</street_address>
+			<street_address_detail>apartment number goes here</street_address_detail>
+			<city>city goes here</city>
+			<state>state goes here</state>
+			<zipcode>zipcode goes here</zipcode>
+		</address>
+		<contact>
+			<heading>Contact Information</heading>
+			<home_phone>home phone goes here</home_phone>
+			<work_phone>work phone goes here</work_phone>
+			<cell_phone>cell phone goes here</cell_phone>
+			<fax_number>fax number goes here</fax_number>
+			<email_address>email address goes here</email_address>
+		</contact>
+		<Internet>
+		<heading>Internet</heading>
+		<website><html:a href="http://www.whatever.com">www.whatever.com</html:a></website>
+		<email_address><html:a href="mailto:user@whatever.com">user@whatever.com</html:a></email_address>
+		</Internet>
+		<comments>
+			<heading>Comments</heading>
+			<misc_comments>comments go here</misc_comments>
+		</comments>
+	</record>
+	<record ID="3">
+		<name>
+			<first_name>first name</first_name>
+			<middle_name>middle name</middle_name>
+			<last_name>last name</last_name>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street_address>street address goes here</street_address>
+			<street_address_detail>apartment number goes here</street_address_detail>
+			<city>city goes here</city>
+			<state>state goes here</state>
+			<zipcode>zipcode goes here</zipcode>
+		</address>
+		<contact>
+			<heading>Contact Information</heading>
+			<home_phone>home phone goes here</home_phone>
+			<work_phone>work phone goes here</work_phone>
+			<cell_phone>cell phone goes here</cell_phone>
+			<fax_number>fax number goes here</fax_number>
+			<email_address>email address goes here</email_address>
+		</contact>
+		<Internet>
+		<heading>Internet</heading>
+		<website><html:a href="http://www.whatever.com">www.whatever.com</html:a></website>
+		<email_address><html:a href="mailto:user@whatever.com">user@whatever.com</html:a></email_address>
+		</Internet>
+		<comments>
+			<heading>Comments</heading>
+			<misc_comments>comments go here</misc_comments>
+		</comments>
+	</record>
+	<record ID="4">
+		<name>
+			<first_name>first name</first_name>
+			<middle_name>middle name</middle_name>
+			<last_name>last name</last_name>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street_address>street address goes here</street_address>
+			<street_address_detail>apartment number goes here</street_address_detail>
+			<city>city goes here</city>
+			<state>state goes here</state>
+			<zipcode>zipcode goes here</zipcode>
+		</address>
+		<contact>
+			<heading>Contact Information</heading>
+			<home_phone>home phone goes here</home_phone>
+			<work_phone>work phone goes here</work_phone>
+			<cell_phone>cell phone goes here</cell_phone>
+			<fax_number>fax number goes here</fax_number>
+			<email_address>email address goes here</email_address>
+		</contact>
+		<Internet>
+		<heading>Internet</heading>
+		<website><html:a href="http://www.whatever.com">www.whatever.com</html:a></website>
+		<email_address><html:a href="mailto:user@whatever.com">user@whatever.com</html:a></email_address>
+		</Internet>
+		<comments>
+			<heading>Comments</heading>
+			<misc_comments>comments go here</misc_comments>
+		</comments>
+	</record>
+	<record ID="5">
+		<name>
+			<first_name>first name</first_name>
+			<middle_name>middle name</middle_name>
+			<last_name>last name</last_name>
+		</name>
+		<address>
+			<heading>Address</heading>
+			<street_address>street address goes here</street_address>
+			<street_address_detail>apartment number goes here</street_address_detail>
+			<city>city goes here</city>
+			<state>state goes here</state>
+			<zipcode>zipcode goes here</zipcode>
+		</address>
+		<contact>
+			<heading>Contact Information</heading>
+			<home_phone>home phone goes here</home_phone>
+			<work_phone>work phone goes here</work_phone>
+			<cell_phone>cell phone goes here</cell_phone>
+			<fax_number>fax number goes here</fax_number>
+			<email_address>email address goes here</email_address>
+		</contact>
+		<Internet>
+		<heading>Internet</heading>
+		<website><html:a href="http://www.whatever.com">www.whatever.com</html:a></website>
+		<email_address><html:a href="mailto:user@whatever.com">user@whatever.com</html:a></email_address>
+		</Internet>
+		<comments>
+			<heading>Comments</heading>
+			<misc_comments>comments go here</misc_comments>
+		</comments>
+	</record>
+</address_book>

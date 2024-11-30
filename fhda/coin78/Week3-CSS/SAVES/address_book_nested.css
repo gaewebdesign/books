@@ -1,0 +1,50 @@
+record {
+display:block;
+background-color:beige;
+color: #103066;
+border: thin solid 
+black; margin-top:10px;
+}
+
+name
+{
+    display:block;
+    margin:10px;
+     color: blue;
+}
+
+picture
+{
+    background-image: url(Justin.jpg);
+	display:block;
+    width: 125px;
+    height:110px;
+    position: relative;
+}
+
+game
+{
+    height:100px;
+    width:120px;
+    border:1px solid #000;
+    overflow:auto;
+    background-color:#eee;
+    font: 12px verdana;
+}
+
+tournaments
+{
+	position:relative
+    background-color:#eee;
+    font: 12px verdana;
+}
+
+address
+{
+    padding:10px;
+    margin-top 10px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+     color: blue;
+    background-color:#fff;
+}

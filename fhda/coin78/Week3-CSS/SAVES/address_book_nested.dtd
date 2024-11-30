@@ -1,0 +1,42 @@
+
+
+<!ELEMENT address_book_nested (record*) >
+<!ATTLIST record ID CDATA #REQUIRED>
+<!ELEMENT record (name, game, tournaments, address , contact ,comments) >
+
+<!ELEMENT name (first_name, middle_name? ,last_name, nick_name?, sex? ) >
+<!ELEMENT first_name (#PCDATA ) >
+
+<!ELEMENT last_name (#PCDATA ) >
+<!ELEMENT middle_name (#PCDATA ) >
+<!ELEMENT nick_name (#PCDATA ) >
+<!ELEMENT sex (#PCDATA ) >
+
+<!ELEMENT game (worldranking, strength, favoriteshot )>
+
+<!ELEMENT worldranking (#PCDATA ) >
+<!ELEMENT strength (#PCDATA ) >
+<!ELEMENT favoriteshot (#PCDATA ) >
+
+<!ELEMENT tournaments (grandslam* ,upta*)>
+<!ELEMENT grandslam (#PCDATA ) >
+<!ELEMENT upta (#PCDATA ) >
+
+
+<!ELEMENT address (street_address, street_address_detail, city, state? , zipcode? , country? )>
+<!ELEMENT street_address (#PCDATA ) >
+<!ELEMENT street_address_detail (#PCDATA ) >
+<!ELEMENT city (#PCDATA ) >
+<!ELEMENT state (#PCDATA ) >
+<!ELEMENT country (#PCDATA ) >
+<!ELEMENT zipcode (#PCDATA )>
+
+<!ELEMENT contact (cell_phone, fax_number , email_address)>
+<!ELEMENT cell_phone (#PCDATA ) >
+<!ELEMENT fax_number (#PCDATA ) >
+<!ELEMENT email_address (#PCDATA ) >
+
+<!ELEMENT comments (misc_comments? )> 
+<!ELEMENT misc_comments (#PCDATA ) >
+
+

@@ -1,0 +1,48 @@
+1) What are the primary differences between XML and HTML? 
+2) Why was XML created? 
+3) What business problem does XML solve? 
+4) Is XML a language or meta-language? Explain 
+5) What language was XML and HTML derived from? 
+6) Why does XML need to be human and machine readable? 
+7) What are the three requirements for writing well formed XML? 
+8) What is the role of a DTD with XML? (Think valid XML) 
+9) Write a very short DTD document 
+10) What is the role of CSS with XML? 
+11) Write very short CSS document 
+12) What is the role of XSD with XML? (Think namespaces and datatypes) 
+13) Write a very short XSD document 
+14) Why are namespaces important to XSD? (Think about the Web as a database) 
+15) Compare and contrast DTDs with XSD 
+16) Compare and contrast CSS with XSLT 
+17) What is XSL or XSLT? 
+18) What is XLink and XPointer? 
+19) What is RDF? 
+20) What is EAI? Why is XML useful in EAI? 
+21) Compare and contrast middleware with EAI 
+22) How do Microsoft and Sun use XML? 
+23) What is UDDI, and why is it important? What is SOA? 
+24) What are Web services, SOAP, and WSDL, and how do they incorporate XML? 
+25) What is the Semantic Web? Discuss RDF and Web 2.0 as needed 
+26)Bonus: In 300 to 400 words total (one page single spaced more or less), answer all three of the following:
+
+27XML is easier to learn and use than HTML
+
+28Will XML completely replace HTML (soon or ever?)
+
+How will you use XML? Please be specific and tell me more about your career and interests.
+
+Hints - you get 1 point for questions 1 -25, and 5 points for the bonus question. I'm looking for short answers in the first 25 questions, then your imagination in the bonus question. The total possible score is thus 30 points, out of 25 for the assignment.
+
+If you can't find an answer then you haven't learned to use http://searchwebservices.techtarget.com/, whatis.com or Google.com. Also try http://www.xml.com/ , http://www.xml.org/ or http://builder.com.com/ but remember that whatis.com will be hyperlinked to other subjects.
+
+Good luck!
+
+Please attempt the bonus question as it works in your favor, and it affects the entire exam score. This is due on or about June 6th, 2006.
+
+
+--------------------------------------------------------------------------------
+
+Click here to return to the course outline.
+
+Last revision July 1, 2006
+

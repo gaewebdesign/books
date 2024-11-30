@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE address_book_empty SYSTEM "address_book_empty.dtd">
+<!-- address book with empty tags linked to address_book_empty.dtd -->
+
+<address_book_empty>
+<record ID="1">
+    <name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick" />
+    <address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode" />
+    <contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com" />
+    <comments comment="text" />
+  </record>
+  <record ID="2">
+    <name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick" />
+    <address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode" />
+    <contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com" />
+    <comments comment="text" />
+  </record>
+  <record ID="3">
+    <name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick" />
+    <address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode" />
+    <contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com" />
+    <comments comment="text" />
+  </record>
+  <record ID="4">
+    <name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick" />
+    <address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode" />
+    <contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com" />
+    <comments comment="text" />
+  </record>
+  <record ID="5">
+    <name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick" />
+    <address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode" />
+    <contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com" />
+    <comments comment="text" />
+  </record>
+</address_book_empty>
+

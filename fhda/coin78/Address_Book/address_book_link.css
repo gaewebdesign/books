@@ -1,0 +1,22 @@
+record {display:block; background-color:beige; color: #000066; border: thin solid 
+black; margin-top:10px;} name {display:block; position:relative; width:340px; 
+background-color:red; font-family:Arial; font-size: 14pt; font-weight: bold; color:black; padding:3px;} 
+first_name {display:inline; } middle_name {display:inline; } last_name {display:inline; 
+position:relative;} address {position:relative; left:145px; display: block; font-size: 
+12pt; color: darkblue; margin-top:5px; } heading {display: block; font-family:Arial; 
+position: relative; color: orange;} street_address {display: block; font-family:Arial; 
+position: relative; left: 15px;} street_address_detail {display: block; font-family:Arial; position: 
+relative; left: 15px;} city { display: block; font-family:Arial; position: relative; 
+left: 15px;} state { display: block; font-family:Arial; position: relative; left: 
+15px;} zipcode {display: block; font-family:Arial; position: relative; left: 
+15px;} contact {position:relative; left:145px; display: block; font-size: 12pt; 
+color: darkblue; margin-top:5px;} home_phone {display: block; font-family:Arial; 
+position: relative; left: 15px;} work_phone {display: block; font-family:Arial; 
+position: relative; left: 15px;} cell_phone {display: block; font-family:Arial; 
+position: relative; left: 15px;} fax_number {display: block; font-family:Arial; 
+position: relative; left: 15px;} Internet {position:relative; left:145px; display: block; font-size: 12pt; 
+color: darkblue; margin-top:5px;} email_address {display: block; font-family:Arial; position: 
+relative; left: 15px;} website {display: block; font-family:Arial; position: 
+relative; left: 15px;} comments {position:relative; left:145px; display: block; font-size: 
+12pt; color: darkblue; margin-top:5px;} misc_comments {display: block; font-family:Arial; 
+position: relative; left: 15px;} 

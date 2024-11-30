@@ -1,0 +1,23 @@
+<!--Generated 8/19/2002 6:03:19 PM by EditML Pro, Version 2.5-->
+<!ELEMENT address_book_nested (record*)>
+<!ELEMENT record (name,address,contact,comments)>
+<!ATTLIST record ID CDATA #REQUIRED>
+<!ELEMENT name (first_name,middle_name,last_name,nick_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT middle_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT nick_name (#PCDATA)>
+<!ELEMENT address (street_address,street_address_detail,city,state,zipcode)>
+<!ELEMENT street_address (#PCDATA)>
+<!ELEMENT street_address_detail (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zipcode (#PCDATA)>
+<!ELEMENT contact (home_phone,work_phone,cell_phone,fax_number,email_address)>
+<!ELEMENT home_phone (#PCDATA)>
+<!ELEMENT work_phone (#PCDATA)>
+<!ELEMENT cell_phone (#PCDATA)>
+<!ELEMENT fax_number (#PCDATA)>
+<!ELEMENT email_address (#PCDATA)>
+<!ELEMENT comments (misc_comments)>
+<!ELEMENT misc_comments (#PCDATA)>

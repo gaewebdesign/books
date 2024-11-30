@@ -1,0 +1,22 @@
+<!ELEMENT address_book_empty (record*)>
+<!ELEMENT record (name,address,contact,comments)>
+<!ATTLIST record ID CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name first_name CDATA #REQUIRED>
+<!ATTLIST name middle_name CDATA #REQUIRED>
+<!ATTLIST name last_name CDATA #REQUIRED>
+<!ATTLIST name nick_name CDATA #REQUIRED>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address street_address CDATA #REQUIRED>
+<!ATTLIST address street_address_detail CDATA #REQUIRED>
+<!ATTLIST address city CDATA #REQUIRED>
+<!ATTLIST address state CDATA #REQUIRED>
+<!ATTLIST address zipcode CDATA #REQUIRED>
+<!ELEMENT contact (#PCDATA)>
+<!ATTLIST contact home_phone CDATA #REQUIRED>
+<!ATTLIST contact work_phone CDATA #REQUIRED>
+<!ATTLIST contact cell_phone CDATA #REQUIRED>
+<!ATTLIST contact fax_number CDATA #REQUIRED>
+<!ATTLIST contact e-mail CDATA #REQUIRED>
+<!ELEMENT comments (#PCDATA)>
+<!ATTLIST comments comment CDATA #REQUIRED>

@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<simple>
+	<contact>
+		<first_name>Roger</first_name>
+		<last_name>Okamoto</last_name>
+		<nick_name>Roger</nick_name>
+		<email_address>rogerusta2003@yahoo.com</email_address>
+		<email_address>rogerusta2003@hotmail.com</email_address>
+	</contact>
+	<general>
+		<occupation>Software Programmer</occupation>
+		<education>CS Degree</education>
+		<goals>Learn more about XML</goals>
+	</general>
+	<comments>
+		<comment>comments go here</comment>
+	</comments>
+</simple>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--address book using mixed elements-->
+<!DOCTYPE address_book_mixed SYSTEM "address_book_mixed.dtd">
+<address_book_mixed>
+	<record ID="1">
+		<name_info>
+			<name type="first">first name</name>
+			<name type="middle">middle name</name>
+			<name type="last">last name</name>
+			<name type="nick">nick name</name>
+		</name_info>
+		<address_info>
+			<address type="street">street address goes here</address>
+			<address type="detail">apartment number goes here</address>
+			<address type="city">city goes here</address>
+			<address type="state">state goes here</address>
+			<address type="zipcode">zipcode goes here</address>
+		</address_info>
+		<contact_info>
+			<phone type="home">home phone goes here</phone>
+			<phone type="work">work phone goes here</phone>
+			<phone type="cell">cell phone goes here</phone>
+			<phone type="fax">fax number goes here</phone>
+			<email type="primary">email address goes here</email>
+		</contact_info>
+		<comments>
+			<comment type="misc">comments go here</comment>
+		</comments>
+	</record>
+	<record ID="2">
+		<name_info>
+			<name type="first">first name</name>
+			<name type="middle">middle name</name>
+			<name type="last">last name</name>
+			<name type="nick">nick name</name>
+		</name_info>
+		<address_info>
+			<address type="street">street address goes here</address>
+			<address type="detail">apartment number goes here</address>
+			<address type="city">city goes here</address>
+			<address type="state">state goes here</address>
+			<address type="zipcode">zipcode goes here</address>
+		</address_info>
+		<contact_info>
+			<phone type="home">home phone goes here</phone>
+			<phone type="work">work phone goes here</phone>
+			<phone type="cell">cell phone goes here</phone>
+			<phone type="fax">fax number goes here</phone>
+			<email type="primary">email address goes here</email>
+		</contact_info>
+		<comments>
+			<comment type="misc">comments go here</comment>
+		</comments>
+	</record>
+	<record ID="3">
+		<name_info>
+			<name type="first">first name</name>
+			<name type="middle">middle name</name>
+			<name type="last">last name</name>
+			<name type="nick">nick name</name>
+		</name_info>
+		<address_info>
+			<address type="street">street address goes here</address>
+			<address type="detail">apartment number goes here</address>
+			<address type="city">city goes here</address>
+			<address type="state">state goes here</address>
+			<address type="zipcode">zipcode goes here</address>
+		</address_info>
+		<contact_info>
+			<phone type="home">home phone goes here</phone>
+			<phone type="work">work phone goes here</phone>
+			<phone type="cell">cell phone goes here</phone>
+			<phone type="fax">fax number goes here</phone>
+			<email type="primary">email address goes here</email>
+		</contact_info>
+		<comments>
+			<comment type="misc">comments go here</comment>
+		</comments>
+	</record>
+	<record ID="4">
+		<name_info>
+			<name type="first">first name</name>
+			<name type="middle">middle name</name>
+			<name type="last">last name</name>
+			<name type="nick">nick name</name>
+		</name_info>
+		<address_info>
+			<address type="street">street address goes here</address>
+			<address type="detail">apartment number goes here</address>
+			<address type="city">city goes here</address>
+			<address type="state">state goes here</address>
+			<address type="zipcode">zipcode goes here</address>
+		</address_info>
+		<contact_info>
+			<phone type="home">home phone goes here</phone>
+			<phone type="work">work phone goes here</phone>
+			<phone type="cell">cell phone goes here</phone>
+			<phone type="fax">fax number goes here</phone>
+			<email type="primary">email address goes here</email>
+		</contact_info>
+		<comments>
+			<comment type="misc">comments go here</comment>
+		</comments>
+	</record>
+	<record ID="5">
+		<name_info>
+			<name type="first">first name</name>
+			<name type="middle">middle name</name>
+			<name type="last">last name</name>
+			<name type="nick">nick name</name>
+		</name_info>
+		<address_info>
+			<address type="street">street address goes here</address>
+			<address type="detail">apartment number goes here</address>
+			<address type="city">city goes here</address>
+			<address type="state">state goes here</address>
+			<address type="zipcode">zipcode goes here</address>
+		</address_info>
+		<contact_info>
+			<phone type="home">home phone goes here</phone>
+			<phone type="work">work phone goes here</phone>
+			<phone type="cell">cell phone goes here</phone>
+			<phone type="fax">fax number goes here</phone>
+			<email type="primary">email address goes here</email>
+		</contact_info>
+		<comments>
+			<comment type="misc">comments go here</comment>
+		</comments>
+	</record>
+</address_book_mixed>

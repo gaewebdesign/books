@@ -1,0 +1,174 @@
+record {
+display:block;
+background-color:Scrollbar;
+color: #000066;
+border: thin solid black;
+margin-top:10px;
+}
+
+
+header {
+display: block;
+font-family:Arial; 
+position: relative;
+font-size: 18pt;
+color: black;
+}
+
+name first_name {
+display:inline;
+position:relative;
+width:140px; 
+font-family:Arial;
+font-size: 16pt;
+font-weight: bold;
+color:Red;
+padding:3px;
+} 
+
+name  last_name{
+display:inline;
+position:relative;
+width:440px; 
+font-family:Arial;
+font-size: 18pt;
+font-weight: bold;
+color:blue;
+padding:3px;
+
+} 
+
+name nick_name  {
+display:inline;
+position:relative;
+width:340px; 
+font-family:Arial;
+font-size: 14pt;
+font-weight: bold;
+color:black;
+padding:3px;
+
+} 
+
+name sex  {
+display:none;
+
+} 
+
+game worldranking {
+display:none;
+}
+
+game strength 
+{
+display:inline;
+font-size: 14pt;
+color: black;
+position:relative;
+width:240px; 
+padding:5px;
+left: 5px;
+}
+
+game  favoriteshot {
+display:inline;
+font-size: 14pt;
+position:relative;
+width:240px; 
+padding:5px;
+} 
+
+tournaments grandslam{
+display:inline;
+font-size: 14pt;
+position:relative;
+width:140px; 
+padding:5px;
+color: black;
+
+} 
+
+
+address {
+position:relative;
+/* left:145px; */
+display: block;
+width:700px; 
+font-size: 14pt; 
+color: black;
+margin-top:5px;
+} 
+
+address country{
+position:relative; 
+display: block;
+font-size: 24pt; 
+color: black;
+margin-top:5px;
+} 
+contact {
+position:relative;
+left:145px;
+display: none;
+font-size: 12pt; 
+color: blue;
+margin-top:5px;
+} 
+home_phone {
+display: none;
+font-family:Arial; 
+position: relative;
+left: 15px;
+ } 
+work_phone {
+display: none;
+font-family:Arial; 
+position: relative;
+left: 15px;
+ } 
+cell_phone {
+display: none;
+font-family:Arial; 
+position: relative;
+left: 15px;
+} 
+fax_number {
+display: none;
+font-family:Arial; 
+position: relative;
+left: 15px;
+} 
+Internet {
+position:relative; 
+left:145px;
+display: none;
+font-size: 12pt; 
+color: blue;
+margin-top:5px;
+} 
+email_address {
+display: none;
+font-family:Arial;
+position: 
+relative; left: 15px;
+} 
+website {
+display: none;
+font-family:Arial;
+position: 
+relative; left: 15px;
+} 
+comments {
+display: none;
+position:relative;
+left:145px;
+font-size: 
+12pt; color: black;
+margin-top:5px;
+} 
+misc_comments {
+display: none;
+font-family:Arial; 
+position: relative;
+left: 15px;
+} 

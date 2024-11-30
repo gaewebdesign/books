@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--This is an address_book with empty tags linked to a schema document-->
+<address_book_empty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="address_book_empty.xsd">
+	<record ID="1">
+		<name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick"></name>
+		<address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode"></address>
+		<contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com"></contact>
+		<comments comment="text"></comments>
+	</record>
+	<record ID="2">
+		<name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick"></name>
+		<address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode"></address>
+		<contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com"></contact>
+		<comments comment="text"></comments>
+	</record>
+	<record ID="3">
+		<name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick"></name>
+		<address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode"></address>
+		<contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com"></contact>
+		<comments comment="text"></comments>
+	</record>
+	<record ID="4">
+		<name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick"></name>
+		<address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode"></address>
+		<contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com"></contact>
+		<comments comment="text"></comments>
+	</record>
+	<record ID="5">
+		<name first_name="First" middle_name="Middle" last_name="Last" nick_name="Nick"></name>
+		<address street_address="Street Number" street_address_detail="Street Detail" city="City" state="State" zipcode="Zipcode"></address>
+		<contact home_phone="800-555-1212" work_phone="800-555-1212" cell_phone="800-555-1212" fax_number="800-555-1212" e-mail="user@whatever.com"></contact>
+		<comments comment="text"></comments>
+	</record>
+</address_book_empty>

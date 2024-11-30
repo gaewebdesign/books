@@ -1,0 +1,43 @@
+
+
+address_book_nested
+{
+	display:table;
+}
+
+record
+{
+	display:table-row;
+}
+
+name
+{
+    display:table-cell;
+    margin:10px;
+     color: blue;
+}
+
+picture
+{
+	display:none;
+}
+
+game
+{
+    display:table-cell;
+     color: blue;
+
+
+}
+
+tournaments
+{
+    display:table-cell;
+
+}
+
+address
+{
+    display:table-cell;
+
+}

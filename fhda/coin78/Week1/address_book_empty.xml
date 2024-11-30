@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!-- address book using empty elements -->
+
+<address_book_empty>
+<record ID="1">
+    <name first_name="Justin"  last_name="Henin_Hardanne" nick_name="Belgium Forehand" sex="F" />
+    <game worldranking="3" strength="Mental Toughness" favoriteshot="Cross-court forehand" />
+    <tournaments grandslam="2004 French Open" />
+    <tournaments grandslam="2006 French Open"  />
+
+    <address street_address="19 Number" street_address_detail="Lausanne" city="Antwerp" country="Belgium"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="justin@hotmail.com" />
+    <comments comment="2006 expected to be comeback year" />
+  </record>
+  
+ <record ID="2">
+    <name first_name="Amelie"  last_name="Maueresmo" nick_name="Emmy" sex="F" />
+    <game worldranking="1" strength="Server and Volley" favoriteshot="Backhand-Topspin,Slice,Flat" />
+    <tournaments grandslam="2006 Australian" />
+    <tournaments grandslam="2006 Wimbledon"  />
+    <address street_address="234" street_address_detail="Wimbledon" city="St. Germains en Laye" country="France"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="amelie@gmail.com" />
+    <comments comment="WTA #1 Player &amp; 2006 Wimbledon Champion" />
+ </record>
+ <record ID="3">
+    <name first_name="Martina"  last_name="Hingis" nick_name="Swiss Miss " sex="F" />
+    <game worldranking="12" strength="Court Awareness" favoriteshot="Cross court backhand" />
+    <tournaments grandslam="1998 Australian" />
+    <tournaments grandslam="1997 Wimbledon"  />
+    <tournaments grandslam="1997 US Open" />
+    <tournaments grandslam="1997 Wimbledon"  />
+    <address street_address="CH-9477" street_address_detail="Seidenbaum" city="Trubbach" country="Switzerland"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="martina@yahoo.com" />
+    <comments comment="2006 back on tour after 3 year absence" />
+ </record>
+ <record ID="4">
+    <name first_name="Maria"  last_name="Sharapova" nick_name="The It Girl" sex="F" />
+    <tournaments grandslam="2004 Wimbledon" />
+    <game worldranking="3" strength="Service return, both sides" favoriteshot="Two-handed backhand" />
+    <address street_address="5500 " street_address_detail="34th St. W" city="Bradenton" statet="Florida" zipcode="34210-3506" />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="mariasharapova@netscape.com" />
+    <comments comment="2006 is the year to prove that she still belongs in the top 5" />
+ </record>
+
+ <record ID="5">
+    <name first_name="Lindsay"  last_name="Davenport" nick_name="Sport" sex="F" />
+    <game worldranking="5" strength="Power game" favoriteshot="Approach forehand" />
+    <tournaments grandslam="2004 Wimbledon " />
+    <address street_address="1990" street_address_detail="Seaside" city="Palos Verdes" state="California"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="Lindsaydavenport@hotmail.com" />
+    <comments comment="2001 Wimbledon Champion" />
+ </record>
+ <record ID="6">
+    <name first_name="Roger"  last_name="Federer" nick_name="Fed" sex="M" />
+    <game worldranking="1" strength="Mental toughness" favoriteshot="Top-spin forehand" />
+    <tournaments grandslam="2006 Wimbledon" />
+    <tournaments grandslam="2005 Wimbledon"  />
+    <tournaments grandslam="2005 US Open" />
+    <tournaments grandslam="2005 Australian"  />
+    <tournaments grandslam="2005 Wimbledon" />
+    <tournaments grandslam="2005 Wimbledon"  />
+    <address street_address="81990" street_address_detail="Olympia" city="Oberwil" country="Switzerland"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="rogerfederer@hotmail.com" />
+    <comments comment="Worlds #1 for 3 years" />
+ </record> 
+  <record ID="7">
+    <name first_name="Rafael"  last_name="Nadal" nick_name="Rafa" sex="M" />
+    <game worldranking="2" strength="Quickness,agility" favoriteshot="Heavy topspin off both ground strokes" />
+    <tournaments grandslam="2006 French Open" />
+    <tournaments grandslam="2005 French Open"  />
+    <address street_address="1990" street_address_detail="Seaside" city="Manacor " country="Mallorca"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="rafaelnadal@hotmail.com" />
+    <comments comment="Established as the only competitor to Federer" />
+    
+     <record ID="8">
+    <name first_name="David"  last_name="Nalbandian" nick_name="Bandie" sex="M" />
+    <game worldranking="3" strength="Serve and volley" favoriteshot="Cross court volley" />
+    <tournaments upta="2006 US Clay Courts" />
+    <address street_address="10" street_address_detail="Golden Ave" city="Cordoba" country="Argentina"  />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="davidnalbandian@hotmail.com" />
+    <comments comment="Expected to break into top 5 in 2006" />
+    
+
+ </record>  <record ID="9">
+    <name first_name="James"  last_name="Blake" nick_name="Sport" sex="M" />
+    <game worldranking="13" strength="Service and volley" favoriteshot="Backhand Slice" />
+    <tournaments upta="2005  River Oaks" />
+    <address street_address="870" street_address_detail="44th Ave" city="Tampa" state="Florida" zipcode="91128" />
+    <contact  cell_phone="438-555-3745" fax_number="632-432-4932" e-mail="jamesblake@hotmail.com" />
+    <comments comment="Top US player" />
+ </record> 
+
+ </record>   
+</address_book_empty>
+

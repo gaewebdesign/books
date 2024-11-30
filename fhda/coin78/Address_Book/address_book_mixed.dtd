@@ -1,0 +1,18 @@
+<!--Generated 8/19/2002 2:35:53 PM by EditML Pro, Version 2.5-->
+<!ELEMENT address_book_mixed (record*)>
+<!ELEMENT record (name_info,address_info,contact_info,comments)>
+<!ATTLIST record ID CDATA #REQUIRED>
+<!ELEMENT name_info (name*)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name type CDATA #REQUIRED>
+<!ELEMENT address_info (address*)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address type CDATA #REQUIRED>
+<!ELEMENT contact_info (phone*,email)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone type CDATA #REQUIRED>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email type CDATA #REQUIRED>
+<!ELEMENT comments (comment)>
+<!ELEMENT comment (#PCDATA)>
+<!ATTLIST comment type CDATA #REQUIRED>
