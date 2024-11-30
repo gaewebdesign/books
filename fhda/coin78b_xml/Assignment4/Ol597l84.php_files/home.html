@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>COIN-078B Internet Programming with XML : Java and XML DOM</title>
+
+
+<meta name="Keywords" content="www.genes.com, Foothill College, COIN-078B, Winter 2007, Internet Programming with XML, Advanced topics in Internet programming focusing on the use and integration of XML, DHTML, JavaScript, Java or .NET, and database technologies for Web application development. This course is intended for students in the Internet programming discipline and professionals who need to develop hands-on programming skills specifically for integrating XML with other technologies and for development of Web Services including the use of SOAP, WSDL, and UDDI.COIN-078B Internet Programming with XML : Java and XML DOM">
+<meta name="Description" content="Winter 2007 Advanced topics in Internet programming focusing on the use and integration of XML, DHTML, JavaScript, Java or .NET, and database technologies for Web application development. This course is intended for students in the Internet programming discipline and professionals who need to develop hands-on programming skills specifically for integrating XML with other technologies and for development of Web Services including the use of SOAP, WSDL, and UDDI. COIN-078B Internet Programming with XML : Java and XML DOM">
+<meta name="Author" content="Newton Chan">
+<meta name="Copyright" content="Copyright 1999-2007 Newton Chan. All Rights Reserved.">
+<script name="Newton C. Chan" type="text/javascript" language="JavaScript">
+/* Copyright 1999-2003 by Newton Chan. All Rights Reserved. This code is protected by the International and US Copyright laws.*/
+if(top.name!='NewtonChan')location='instruct.htm';top.document.title=document.title;var nc=top.nc;nc.ms=true;onunload=function(){nc.ms=false;};function ck(e){if(e.clientX>document.body.clientWidth&&e.clientY>document.body.clientHeight-30)return;var n=top.opener.cm?"\n\n":"\n";if(e.which==1){var t=e.target.parentNode.toString();if(t.indexOf(':')>0&&nc.d){nc.ms=t.indexOf('www.genes.com')>-1;if(t.indexOf('#')!=t.length-1){top.main.location=t;return false;}else return;}else return;}if((nc.ie4u||nc.nv4u)&&nc.d){if(confirm("Do you want to print this page?"+n+n+"A print dialog box will appear after you click OK."+n+n+nc.copymsg)){top.main.focus();try{top.main.print();}catch(e){alert('Please press Ctrl+P to print this page.');};}}else alert(nc.msg);return false;}document.onclick=ck;document.onkeyup=function(e){if(nc.ie4u)e=event;if(nc.d&&!e.metaKey)return;alert(nc.msg);}</script><!--LINK rel="stylesheet" href="../css/foothill.css" type="text/css"--><!--www.genes.com-->
+
+
+<style type="text/css">
+<!--
+.code{color:#c36; font-size:10pt; font-family:"courier new",courier,monospace; margin:32;}
+thead{background:#eee}
+code{color:#636}
+em{color:#00f}
+-->
+</style></head><noscript><META http-equiv="refresh" content="0;url=index1.htm"></noscript><body topmargin="10" leftmargin="30" oncontextmenu="return false" alink="#990066" bgcolor="#fffacd" link="#0000cc" marginheight="10" marginwidth="30" text="#000000" vlink="#990099">
+<h1 style="background: rgb(204, 204, 255) none repeat scroll 0%; font-family: tahoma,verdana,arial,helvetica,sans-serif; color: rgb(51, 0, 102); text-align: center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">COIN-078B<br>Internet Programming with XML</h1><h2 align="center">Java and XML DOM</h2>
+<span style="position: absolute; left: 60px; top: 20px; font-family: tahoma,verdana,arial,helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: 200; font-size: 10pt; line-height: 10pt; font-size-adjust: none; font-stretch: normal; color: rgb(51, 51, 102);"><a style="text-decoration: none;" href="http://www.genes.com/fh/coin78b/week5.php">&lt;&lt;</a> Week 6 <a style="text-decoration: none;" href="http://www.genes.com/fh/coin78b/week7.php">&gt;&gt;</a></span>
+<hr>
+<h3>Module Objectives</h3><ul>
+<li>Create an XML parser in Java</li>
+<li>Parse &amp; display an entire document</li>
+<li>Filter XML documents</li>
+<li>Create a windowed browser</li>
+<li>Navigate &amp; modify XML Documents</li>
+<li>Transform XML Documents with XSLT</li>
+</ul>
+<h3>Reading Assignments:</h3><ul><li><b>Textbook:</b> chapters 10 &amp; 11</li></ul>
+<p></p><hr><p>
+</p><div style="border: 2pt outset rgb(255, 204, 204); padding: 10pt 20pt; margin-left: 10%; margin-right: 10%; background-color: rgb(204, 255, 255);">
+
+<h2>Java API for XML Processing (JAXP)</h2>
+<p>The <a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/docs.html')">Java API for XML Processing (JAXP)</a>,
+included in Sun J2SE 1.4 and later, is a fairly complete set of APIs
+for processing XML data in Java. JAXP leverages the parser standards
+SAX (Simple API for XML Parsing) and W3C DOM (Document Object Model) so
+that you can choose to parse your data as a stream of events or to
+build an object representation of it. JAXP also supports the XSLT (XML
+Stylesheet Language Transformations) standard, giving you control over
+the presentation of the data and enabling you to convert the data to
+other XML documents or to other formats, such as HTML. JAXP also
+provides namespace support, allowing you to work with DTDs that might
+otherwise have naming conflicts.</p>
+<p>Most current XML parsers for Java support JAXP including Crimson, Ælfred, Xerces, Piccolo, and the Oracle XML Parser for Java.</p>
+<p>The following implementations support the transform component of JAXP and also bundle a parser (in alphabetical order):</p>
+<table border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr>
+<th>Name</th>
+<th>Parser Implementation</th>
+<th>XSLT Processor Implementation</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="javascript:top.twn('http://xml.apache.org/xalan-j')" shape="rect">Apache Xalan-J</a>
+</td>
+<td>Xerces-J 2.x</td>
+<td>Xalan-J XSLT</td>
+<td>None</td>
+</tr>
+<tr>
+<td>
+<a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/reference/faqs/index.html#jaxp-ri')">JAXP Reference Implementation</a>
+</td>
+<td>Xerces2 or Crimson</td>
+<td>Xalan-J XSLT</td>
+<td>See <a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/reference/faqs/index.html#jaxp-ri')">JAXP RI questions</a> below.</td>
+</tr>
+<tr>
+<td>
+<a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2')">
+Java 2 Platform, Standard Edition 1.4</a>
+</td>
+<td>Crimson</td>
+<td>Xalan-J XSLT, cvs tag: xalan_2_2_d10</td>
+<td>Uses JAXP RI version later than 1.1.2</td>
+</tr>
+<tr>
+<td>
+<a href="javascript:top.twn('http://saxon.sourceforge.net')">Saxon</a>
+</td>
+<td>Old fork of Ælfred2</td>
+<td>Saxon XSLT</td>
+<td>No DOM support</td>
+</tr>
+</tbody>
+</table>
+<p></p><li><a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPIntro.html#wp65584')">JAXP tutorial</a></li>
+<li><a href="javascript:top.twn('http://people.apache.org/~edwingo/jaxp-ri-1.2.0-fcs/docs/api')">Javadoc API documentation</a></li>
+<li><a href="javascript:top.twn('http://people.apache.org/~edwingo/jaxp-ri-1.2.0-fcs/docs/samples.html')">JAXP samples</a></li>
+<li><a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/reference/faqs')">JAXP FAQ</a></li>
+<p></p>
+<h2>The Document Object Model (DOM) APIs</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr align="left" valign="middle"><th>Interfaces</th><th>Uses</th></tr></thead>
+<tbody><tr valign="middle"><td>Document Object Module (DOM)</td><td><li>XML to XML</li><li>non-XML to XML</li><li>XML to non-XML</li></td></tr></tbody>
+</table>
+<p>The <a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPIntro5.html')">DOM APIs</a>
+is generally an easier API to use. It provides a relatively familiar
+tree structure of objects. You can use the DOM API to manipulate the
+hierarchy of application objects it encapsulates. The DOM API is ideal
+for interactive applications because the entire object model is present
+in memory, where it can be accessed and manipulated by the user. On the
+other hand, constructing the DOM requires reading the entire XML
+structure and holding the object tree in memory, so it is much more CPU
+and memory intensive.</p>
+<p></p><li><a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPDOM.html#wp79994')">DOM tutorial</a></li>
+<li><a href="javascript:top.twn('http://xerces.apache.org/xerces2-j/samples-dom.html')">DOM samples</a></li>
+<p></p>
+<h3>Creating a Parser and Parsing a Document</h3>
+<p>You use the <em>javax.xml.parsers.DocumentBuilderFactory</em> class to get a <em>DocumentBuilder</em> instance, and use that to produce a <em>Document</em>
+that conforms to the DOM specification. The factory APIs give you the
+ability to plug in an XML implementation offered by another vendor
+without changing your source code. The implementation you get depends
+on the <a href="http://developer.java.sun.com/developer/EJTechTips/2003/tt0311.html#1">setting</a>
+of the javax.xml.parsers.SAXParserFactory and
+javax.xml.parsers.DocumentBuilderFactory system properties. The default
+values (unless overridden at runtime) point to Sun's implementation.
+</p>
+  <p>JAXP parsing uses the following steps:</p>
+  <ol>
+    <li>Create a DocumentBuilderFactory instance.
+    </li><li>Set any parser flags or properties.
+    </li><li>Create DocumentBuilder to create the parser.
+    </li><li>Parse the document
+  </li></ol>
+<blockquote><code></code><pre>DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+factory.setNamespaceAware(true);
+DocumentBuilder builder = factory.newDocumentBuilder();
+Document document = builder.parse("catalog.xml");
+</pre></blockquote>
+<p></p>
+<h3>nodeName, nodeValue, and attributes of Node</h3>
+<p>The values of <code>nodeName</code>,
+ <code>nodeValue</code>, and <code>attributes</code> vary according to the
+ node type as follows:
+ <table summary="Describes interface, node name, node value, and attributes" border="1" cellspacing="0">
+ <thead>
+ <tr>
+ <th>Interface</th>
+ <th>nodeName</th>
+ <th>nodeValue</th>
+ <th>attributes</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td valign="top">Attr</td>
+ <td valign="top">name of
+ attribute</td>
+ <td valign="top">value of attribute</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">CDATASection</td>
+ <td valign="top"><code>"#cdata-section"</code></td>
+ <td valign="top">
+ content of the CDATA Section</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">Comment</td>
+ <td valign="top"><code>"#comment"</code></td>
+ <td valign="top">content of
+ the comment</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">Document</td>
+ <td valign="top"><code>"#document"</code></td>
+ <td valign="top">null</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">DocumentFragment</td>
+ <td valign="top">
+ <code>"#document-fragment"</code></td>
+ <td valign="top">null</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">DocumentType</td>
+ <td valign="top">document type name</td>
+ <td valign="top">
+ null</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">Element</td>
+ <td valign="top">tag name</td>
+ <td valign="top">null</td>
+ <td valign="top">NamedNodeMap</td>
+ </tr>
+ <tr>
+ <td valign="top">Entity</td>
+ <td valign="top">entity name</td>
+ <td valign="top">null</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">
+ EntityReference</td>
+ <td valign="top">name of entity referenced</td>
+ <td valign="top">null</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">Notation</td>
+ <td valign="top">notation name</td>
+ <td valign="top">null</td>
+ <td valign="top">
+ null</td>
+ </tr>
+ <tr>
+ <td valign="top">ProcessingInstruction</td>
+ <td valign="top">target</td>
+ <td valign="top">entire content excluding the target</td>
+ <td valign="top">null</td>
+ </tr>
+ <tr>
+ <td valign="top">Text</td>
+ <td valign="top">
+ <code>"#text"</code></td>
+ <td valign="top">content of the text node</td>
+ <td valign="top">null</td>
+ </tr>
+ </tbody>
+ </table>
+ </p>
+<h3>Getting the Element Text Content</h3>
+<p>Since the <code>getNodeValue()</code> method of Element returns <code>null</code>, first you have to get the text node of the element through its <code>getFirstChild()</code> method, then calling the text node <code>getNodeValue()</code>.
+</p><blockquote><code></code><pre>String text = element.getFirstChild().getNodeValue();
+// if the element has no other child element but only its text node
+</pre></blockquote>
+<p></p>
+<h2>The XML Stylesheet Language for Transformation (XSLT) APIs</h2>
+<p>The <a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPIntro6.html')">XSLT APIs</a> defined in javax.xml.transform let you write XML data to a file or convert it into other forms using XSLT stylesheet.</p>
+<h3>Creating a Transformer and Transforming a Document</h3>
+<p>To transform an input document into an output document with an XSLT stylesheet follow these steps:</p>
+<ol type="1"><li><p>
+ Load the  <tt>TransformerFactory</tt>
+ with the static <tt>TransformerFactory.newInstance()</tt>
+ factory method.
+ </p></li><li><p>
+ Form a <tt>Source</tt> object from the XSLT stylesheet.
+ </p></li><li><p>
+ Pass this <tt>Source</tt> object
+ to the factory&#8217;s <tt>newTransformer()</tt>
+ factory method to build a <tt>Transformer</tt>
+ object.
+ </p></li><li><p>
+ Build a <tt>Source</tt> object
+ from the input XML document you wish to transform.
+ </p></li><li><p>
+ Build a <tt>Result</tt> object
+ for the target of the transformation.
+ </p></li><li><p>
+ Pass both the source and the result to
+ the <tt>Transformer</tt>
+ object&#8217;s <tt>transform()</tt> method.
+ </p></li>
+</ol>
+<p>Steps four through six can be repeated for as many different input documents as you want. You can reuse the same
+<tt>Transformer</tt> object repeatedly in series, though you can't use it in multiple threads in parallel.
+</p>
+<blockquote><code></code><pre>try
+{
+  TransformerFactory tfFactory = TransformerFactory.newInstance();
+  Source xsl = new StreamSource( "some.xsl" );
+  Transformer stylesheet = tfFactory.newTransformer( xsl );
+
+  Source xml  = new StreamSource( "some.xml" );
+  Result out = new StreamResult( System.out );
+  stylesheet.transform( xml, out );
+}
+catch (TransformerException e)
+{
+  System.err.println(e);
+}
+</pre></blockquote>
+<p></p><li><a href="javascript:top.twn('http://xml.apache.org/xalan-j/samples.html')">Xalan XSLT processor samples</a></li><p></p>
+</div>
+<p>
+<script language="JavaScript">
+<!--
+nc.p='Newton C. Chan';
+ilk=' <img src="../images/eye20x11.gif" alt="look at this!" title="look at this!" border="0" />';
+ipt=' <img src="../images/icon_print.gif" alt="print this!" title="print this!" border="0" />';
+nc.linkL(new Array('java.sun.com/webservices/jaxp/reference |JAXP Reference','java.sun.com/webservices/jaxp/docs.htmla|Java API for XML Processing (JAXP)','java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPIntro.html#wp65584C|Java API for XML Processing Tutorial','java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPDOM.html#wp79994t|DOM Tutorial','java.sun.com/j2se/1.4.2/docs/apie|Java 2 Platform, Standard Edition, v 1.4.2 API Specification','java.sun.com/j2se/1.4.2/docs/api/javax/xml/parsers/package-summary.htmlw|javax.xml.parsers','java.sun.com/j2se/1.4.2/docs/api/javax/xml/transform/package-summary.htmlh|javax.xml.transform','java.sun.com/j2se/1.4.2/docs/api/javax/xml/transform/dom/package-summary.html.|javax.xml.transform.dom','java.sun.com/j2se/1.4.2/docs/api/org/w3c/dom/package-summary.htmlN|org.w3c.dom'),'Resources:',false,null,true);
+//-->
+</script><strong>Resources:</strong></p><ul><li><a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/reference')">JAXP Reference</a></li><li><a href="javascript:top.twn('http://java.sun.com/webservices/jaxp/docs.html')">Java API for XML Processing (JAXP)</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPIntro.html#wp65584')">Java API for XML Processing Tutorial</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JAXPDOM.html#wp79994')">DOM Tutorial</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2/docs/api')">Java 2 Platform, Standard Edition, v 1.4.2 API Specification</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2/docs/api/javax/xml/parsers/package-summary.html')">javax.xml.parsers</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2/docs/api/javax/xml/transform/package-summary.html')">javax.xml.transform</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2/docs/api/javax/xml/transform/dom/package-summary.html')">javax.xml.transform.dom</a></li><li><a href="javascript:top.twn('http://java.sun.com/j2se/1.4.2/docs/api/org/w3c/dom/package-summary.html')">org.w3c.dom</a></li></ul>
+<a name="homewrks"><b>Hands-on Assignment:</b></a><ul>
+<li><a href="http://www.genes.com/fh/coin78b/homewrk4.php"><b>Assignment 4</b></a> due <b>Week 8</b></li></ul>
+<center><span style="text-align: center; color: rgb(204, 0, 153); font-family: tahoma,verdana,arial,helvetica,sans-serif; font-size: 6pt;">© Copyright 1999-2007 Newton Chan. All Rights Reserved.</span></center>
+</body></html>

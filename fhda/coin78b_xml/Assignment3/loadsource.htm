@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>Controls</title>
+        <script type 'text/javascript'>        
+  
+  
+           // Parse through the XML file
+           function WriteXML(xmldoc) 
+           {
+             var atom ; 
+                
+//           Get the top level node
+             atom = xmldoc.getElementsByTagName("ATOM");
+                                 
+            // LOOP THROUGH THE NODES
+            for(var i = 0; i < atom.length , i< 190; i++) {
+                  
+                document.writeln("<ATOM>");                    
+                DoAtomNode( atom[i] );               
+                document.writeln("</ATOM>");               
+                document.writeln("");
+            }
+    
+            }    
+            
+           //Write a node 
+           function node(name,  attribute, value )
+           {
+                 if(attribute=="")
+                 document.write(  "<"+ name + ">");
+                 else
+                 document.write("<" + name + " " + attribute + " >");
+                                 
+                 document.write(  "" + value );                      
+                 document.writeln(  "</"+ name + ">");          
+           }
+           
+            //Loop through through nodes           
+           function DoAtomNode( a )
+           {          
+                var attr,str,tag ;
+                                           
+                for(i=0;i< a.childNodes.length;i++){
+                  try{
+                       
+                       tag = a.childNodes(i).tagName;
+                                          
+                          try{
+                                attr = a.getElementsByTagName(tag)[0].attributes[0];
+                                str =  attr.name  +  '="' +  attr.value + '"' ;
+                   
+                            }catch(err0){ str=""; }
+                                          
+                          node(tag,str,a.getElementsByTagName(tag)[0].text);   
+                        
+                   }catch(err){ }
+                               
+           }// for loop
+                              
+}// function DoAtomNode 
+                            
+
+
+        function transformXML( theXMLFile, theXSLFile , byValue, byType, byOrder)
+        {
+          var xmldoc, xsldoc,output;
+           
+          
+          xmldoc = new ActiveXObject("Microsoft.XMLDOM");
+          xmldoc.async = false;
+          xmldoc.load( theXMLFile );
+
+          xsldoc = new ActiveXObject("Microsoft.XMLDOM");
+          xsldoc.async = false;
+          xsldoc.load( theXSLFile ); 
+          
+          // Modify the sort order ---------------------
+ //       <xsl:sort data-type="text"  select="SYMBOL"/>  
+ //       <xsl:sort data-type="number" select="SYMBOL"  order="descending"/>
+ 	
+            var x = xsldoc.getElementsByTagName('xsl:sort');	
+           
+            x[0].setAttribute("select",    byValue );
+            x[0].setAttribute("data-type", byType );
+            x[0].setAttribute("order",     byOrder );
+            
+            document.writeln("select is    " + x[0].getAttribute('select')+'<br>');      
+            document.writeln("data-type is    " + x[0].getAttribute('data-type')+'<br>');
+            document.writeln("order is    " + x[0].getAttribute('order')+'<br>');
+          
+          // -------------------------------------------
+                   
+          output = xmldoc.transformNode(xsldoc); 
+          document.write( output ); 
+           
+    }
+    
+      function displayXML( theFile )
+      {
+          var xsldoc;
+          var attr,str;
+          
+          xsldoc = new ActiveXObject("Microsoft.XMLDOM");
+          xsldoc.async = false;
+          xsldoc.load( theFile ); 
+          
+ //       <xsl:sort data-type="text"  select="SYMBOL"/>  
+ //         document.write( str + "  " );
+ //         document.write( str );
+              
+              // LOOP THROUGH THE NODES            
+                attr = xsldoc.getElementsByTagName("xsl:sort");
+                document.write(attr.length);
+             for(var i = 0; i < attr.length ; i++) {
+                   str =  attr[i].name  +  '="' +  attr[i].value + '"' ;
+                   document.write( str );
+
+             }        
+                
+ //               attr = xsldoc.getElementsByTagName("xsl:sort")[0].attributes[0];
+ //               str =  attr.name  +  '="' +  attr.value + '"' ;
+ //               attr = xsldoc.getElementsByTagName("xsl:sort")[0].attributes[1];
+ //               str =  attr.name  +  '="' +  attr.value + '"' ;
+
+          
+          
+           document.write("<xmp>");
+           document.write( xsldoc.xml );       
+           document.write("</xmp>");
+      
+      }
+            
+                    
+        function displaySource(  )
+        {
+          var xmldoc;
+          var theFile="elements.xml";
+          var xml="";
+                                           
+            document.getElementById("to").outerHTML =  "Friday";          
+            document.getElementById("from").outerHTML= "rogero"
+            document.getElementById("message").outerHTML= "roger";                                
+     
+        }
+      
+        function handler( )
+        {
+        
+            var i,nodes,type,order ;
+            nodes = new Array("NAME","ATOMIC_WEIGHT","ATOMIC_NUMBER","BOILING_POINT","MELTING_POINT",
+            "SYMBOL","ATOMIC_RADIUS");
+/*            
+            nodes = new Array("NAME","ATOMIC_WEIGHT","ATOMIC_NUMBER","OXIDATION_STATES","BOILING_POINT","MELTING_POINT",
+            "SYMBOL", "DENSITY","ELECTRON_CONFIGURATION","ELECTRONEGATIVITY",
+            "ATOMIC_RADIUS", "ATOMIC_VOLUME", "IONIZATION_POTENTIAL","SPECIFIC_HEAT_CAPACITY","THERMAL_CONDUCTIVITY");
+*/          
+            type = new Array("number","text");
+            order = new Array("ascending", "descending");
+            
+            i= 1000* Math.random( );
+            i = Math.round(i);
+            i = i%nodes.length;
+            document.writeln("i = " + i + "<br>");
+//          loadXML("elements.xml" );
+//          displayXML("assign1.xsl"); 
+//          displayXML("elements.xml"); 
+            transformXML( "elements.xml", "assign1.xsl" ,nodes[i%nodes.length], type[i%type.length] , order[i%order.length] );
+//          displaySource("elements.xml");
+       
+        }
+  
+        </script>
+        
+  </head>
+
+ 
+<body onload="handler( )" >
+       <h1>W3Schools Internal Note</h1>
+
+
+<p>
+<b>To:</b> <span id="to"></span><br />
+<b>From:</b> <span id="from"></span><br />
+<b>Message:</b> <span id="message"></span>
+</p>
+
+
+</body>
+
+</html>
+

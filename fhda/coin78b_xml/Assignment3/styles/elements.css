@@ -1,0 +1,24 @@
+
+
+
+ATOM {
+display:block;
+background-color:Scrollbar;
+color: #001066;
+border: thin solid black;
+margin-top:10px;
+}
+
+
+ATOM NAME
+{
+	display:table-cell;
+	color:Red;
+}
+
+ATOM NAME.PURPLE 
+{
+	display:table-cell;
+	color:Purple 
+	
+}

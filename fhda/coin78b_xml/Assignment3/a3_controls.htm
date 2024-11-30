@@ -1,0 +1,230 @@
+<html>
+  <head>
+    <title>Controls</title>
+    
+        <script language="javascript">   
+             
+        var xmldoc, xsldoc;
+        var xmlFile="elements.xml", xslFile="styles/assign1.xsl";
+ //     var xmlFile="", xslFile="";
+        var t_select="", t_datatype="", t_order="";
+        var gTheForm;
+    
+        function init( )
+        {
+                    
+          xmldoc = new ActiveXObject("Microsoft.XMLDOM");
+          xmldoc.async = false;
+
+          xsldoc = new ActiveXObject("Microsoft.XMLDOM");
+          xsldoc.async = false;      
+        
+        }
+        
+        function loadXML(theFile)
+        {     
+               
+             xmldoc.load(theFile);
+
+        }
+        
+        
+        function loadXSL(theFile)
+        {
+ 
+            xsldoc.load(theFile);
+               
+        }
+             
+      function writeResults( source )
+      {
+      
+		  parent.frames[1].document.write( source );
+		  parent.frames[1].document.close();
+     
+      }             
+        
+        
+             
+        function displayXSL( theFile)
+        {       
+            xslFile = theFile;        
+            loadXSL( xslFile );   
+		    writeResults("<xmp>" + xsldoc.xml + "</xmp>"  );
+         
+        }
+        
+        function displayXML( theFile )
+        {
+            xmlFile = theFile;        
+            loadXML( xmlFile );  
+ 		    writeResults( "<xmp>" + xmldoc.xml + "</xmp>"  );
+ 
+        
+        }  
+                    
+        
+         function setSortAttr( select_val, datatype_val, order_val )
+         {
+         // Modify the sort order ---------------------
+ //       <xsl:sort data-type="text"  select="SYMBOL"/>  
+ //       <xsl:sort data-type="number" select="SYMBOL"  order="descending"/>
+                   
+            var x = xsldoc.getElementsByTagName('xsl:sort');	
+            if(select_val=="") select_val="NAME";
+            
+               try{                     
+                x[0].setAttribute("select",    select_val );
+                x[0].setAttribute("data-type", datatype_val );
+                x[0].setAttribute("order",     order_val );
+                }catch(err){              
+                   writeResults("EXCEPTION :   " + err + '<br>');                     
+                }                      
+                   
+         }   
+         
+         function sourceXML(  )
+        {
+                                
+           var output;
+                                               
+            xmldoc.load( xmlFile ); 
+            xsldoc.load( xslFile ); 
+
+           try{      
+               output = xmldoc.transformNode(xsldoc);          
+               writeResults("<plaintext>" +  output + "</plaintext>");
+           }catch(err){          
+               writeResults("EXCEPTION: " + err + "<br> Select the XML or XSL data file " + "<br>");
+           
+           }   
+                        
+           
+        }                   
+        
+        
+        function transformXML( theForm )
+        {
+ /*       
+            "NAME","ATOMIC_WEIGHT","ATOMIC_NUMBER","BOILING_POINT","MELTING_POINT","SYMBOL","ATOMIC_RADIUS"      
+            type = new Array("number","text");
+            order = new Array("ascending", "descending");      
+ */                                
+           var output;
+                                 
+                                 
+            xmldoc.load( xmlFile );
+            xsldoc.load( xslFile );
+                	         
+ 	        // Only sort if requested    
+            if( transformXML.arguments.length >0 ){
+                    var select_val,datatype_val,order_val; 
+                    select_val    = theForm.elements["EProperty"].value;
+                    datatype_val  = theForm.elements["Datatype"].value;
+                    order_val     = theForm.elements["Order"].value;
+                    setSortAttr( select_val, datatype_val, order_val);     
+ //                 parent.frames[1].document.writeln("EProperty = " + select_val + "<br>");       
+ //                 parent.frames[1].document.writeln("Datatype = " + datatype_val + "<br>");       
+ //                 parent.frames[1].document.writeln("Order = " + order_val + "<br>");     
+                                         
+            }    
+                  
+          try{ 
+                output = xmldoc.transformNode(xsldoc); 
+                writeResults( output );
+          }catch(err){                    
+              writeResults("EXCEPTION: " + err + "<br> Select the XML or XSL data file " + "<br>");
+          
+          }
+          
+        }          
+             
+            
+                
+        </script>
+       
+  </head>
+  <body BGCOLOR="#eeeeee" onload="init( )">
+
+
+  <table width="200" border="1" cellspacing="1" cellpadding="5">
+
+    <caption><font size="2" face="Arial">
+	  <b>XML Viewer\XSL</b><br><br>
+	</font></caption>
+    <tr><td>
+      <div >
+  	  <b>Load XML Data Files</b>
+      </td><td>
+<!--    <input type="submit" value="  files  " name="submit" onclick="displayXML()">&nbsp;&nbsp;<br />
+--> 
+        <a  onclick="displayXML('elements.xml')" >elements.xml</a><br />
+          </div>
+    
+    </td></tr>
+
+    <tr><td>
+	  <b>Load XSL Stylesheets</b>
+      </td><td>
+<!--  
+       <input type="submit" value="  files  " name="submit" onclick="displayXSL( )" >&nbsp;&nbsp;<br />
+-->   
+       <a  onclick="displayXSL('styles/assign1.xsl')">assign1.xsl</a><br />
+       <a  onclick="displayXSL('styles/assign2.xsl')">assign2.xsl</a><br />
+       <a  onclick="displayXSL('styles/raw-xml.xsl')">raw-xml.xsl</a><br />
+       <a  onclick="displayXSL('styles/defaultss.xsl')">defaultss.xsl</a><br />
+      </td></tr>
+    
+    <tr><td>
+	  <b>Transform To</b>
+      </td><td>
+        <input type="submit" value="Browser" name="NBrowser" onclick="transformXML( )">&nbsp;&nbsp;<br /> 
+        <input type="submit" value="Source  " name="NSource" onclick="sourceXML( )">&nbsp;&nbsp;<br /> 
+    </td></tr>
+      
+    <tr>
+    
+<!--    
+ -->
+ 
+ <form onSubmit= "return transformXML(this)">  
+
+       <td><b>Sort by</b></td>	        	  
+	  <td>	  
+	   <font size=2>
+           NAME<br/>
+           ATOMIC_WEIGHT<br/>
+           ATOMIC_NUMBER<br/>
+           BOILING_POINT<br/>
+           MELTING_POINT<br/>
+           SYMBOL<br/>
+           ATOMIC_RADIUS<br/>    
+        </font>	   
+	  <input type="text" size="25"  maxlength="66" name="EProperty">
+        Datatype
+        <select name="Datatype">
+        <option selected value="text">text</option>
+        <option  value="number">number</option>
+        </select>
+        <br />
+        Order
+      <select name="Order">
+          <option selected value="ascending">ascending</option>
+          <option value="descending">descending</option>
+      </select>        
+        <input type="submit" value="Sort" name="Transform" >&nbsp;&nbsp;<br />    
+    </td>
+  </form>
+
+    </tr>
+    
+  
+  </table>  
+  
+  
+
+  
+  
+  </body>
+</html>
+

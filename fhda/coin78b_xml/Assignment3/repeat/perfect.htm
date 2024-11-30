@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Transform Sample</title>
+    <script language="javascript">
+      function init()
+      {
+        // load XML source document
+        var source = new ActiveXObject("Microsoft.XMLDOM");
+        source.async = false;
+        source.load("elements.xml");
+
+        // load XSLT stylesheet document
+        var stylesheet = new ActiveXObject("Microsoft.XMLDOM");
+        stylesheet.async = false;
+        stylesheet.load("assign1.xsl");
+
+        // transform the source using the XSLT stylesheet
+ //       target.innerHTML = source.transformNode(stylesheet);
+          var output = source.transformNode(stylesheet);
+ //		  document.write( "<textarea width=500>" + output +"</textarea>");
+ 		  document.write( "<plaintext>" + output +"</listing>");
+		  
+      }
+    </script>
+  </head>
+
+  <body onload="init()">
+    <div id="target" />
+  </body>
+</html>

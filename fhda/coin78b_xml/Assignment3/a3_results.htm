@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Assignment 3 - Results</title>
+        <script language="javascript">        
+
+
+      function writeResults( text )
+      {
+      
+         document.write("<xmp>");
+         document.write( text );       
+         document.write("</xmp>");
+      
+      }
+        function right(text)
+        {
+        
+            document.writeln( text );            
+            
+        }
+        
+        function GetXMLDoc()
+        {
+        
+            return parent.LEFTFRAME.xmldoc;
+            
+        }   
+        
+        function GetXSLDoc()
+        {       
+            return parent.LEFTFRAME.xsldoc;
+            
+        }   
+        
+               
+               
+             
+        function transformXML( theXMLFile, theXSLFile , select_val, datatype_val, order_val)
+        {
+          var output, xmldoc,xsldoc;
+          
+          
+          xmldoc = GetXMLDoc( );
+          xsldoc = GetXSLDoc( );
+          
+          xmldoc.load( theXMLFile ); 
+          xsldoc.load( theXSLFile ); 
+          
+          // Modify the sort order ---------------------
+ //       <xsl:sort data-type="text"  select="SYMBOL"/>  
+ //       <xsl:sort data-type="number" select="SYMBOL"  order="descending"/>
+ 	         
+ 	        // Only sort if values present   
+            if( transformXML.arguments.length  == 5)
+                   setSortAttr( select_val, datatype_val, order_val);         
+                   
+          output = xmldoc.transformNode(xsldoc); 
+          document.write( output ); 
+//          document.write( xsldoc.xml ); 
+           
+    }      
+         
+         
+         
+                
+        </script>  
+        
+   </head>
+   <body BGCOLOR="#feefef">
+   
+   </body>
+</html>
+

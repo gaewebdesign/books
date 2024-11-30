@@ -1,0 +1,47 @@
+<html>
+<body>
+<script type="text/javascript">
+document.write("Hello the World!")
+
+function xmlloader( )
+{
+var xslDoc,xmlDoc;
+
+
+document.writeln("xmlloader");
+xslDoc = new ActiveXObject("Microsoft.XMLDOM");
+xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+	
+xslDoc.async="false";
+xmlDoc.async="false";
+
+document.writeln("loading...");
+
+xslDoc.load("my.xsl");
+
+document.writeln("done... <br>");
+//  <xsl:sort data-type="text" select="SYMBOL"/>  
+// order ="ascending"
+	
+var x = xslDoc.getElementsByTagName('xsl:sort');	
+  document.writeln("<br>");
+   document.writeln("LEN = " + x.length + '<br>' );
+//   document.writeln("has attributes" + x[0].hasAttributes() + '<br>'  );
+  document.writeln("now transforming <br>");
+  document.writeln("data-type is " + x[0].getAttribute('data-type') +'<br>' );
+  document.writeln("select is    " + x[0].getAttribute('select')+'<br>');
+  document.writeln("order is     " + x[0].getAttribute('order')+'<br>');
+  x[0].setAttribute("select","ATOMIC_WEIGHT" );
+  document.writeln("select is    " + x[0].getAttribute('select')+'<br>');
+// }
+ 
+
+
+
+}
+
+xmlloader( );
+
+</script>
+</body>
+</html>

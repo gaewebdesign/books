@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Controls</title>
+    
+        <script language="javascript">   
+
+        function init( )
+        {
+        
+        }
+        
+        function write( text)
+        {
+		      parent.frames[1].document.writeln(text);
+              parent.frames[1].document.close();
+        }         
+          
+        function checkempty(theform)
+        {
+            var returnval=true //by default, allow form submission
+                for (i=0; i<theform.elements.length; i++){
+                    document.writeln("TYPE" + theform.elements[i].type + "=" + theform.elements[i].value );
+                    if (theform.elements[i].type=="text" || theform.elements[i].type=="textarea"){
+                       if (theform.elements[i].value==""){ //if empty field
+                        alert("Please make sure all fields are entered") //alert error message
+                           returnval=false //disallow form submission
+                            break //end loop. No need to continue.
+                        }
+                    }
+                }
+            return returnval
+        }  
+              
+        function listform(theform)
+        {
+            var returnval=true //by default, allow form submission
+                for (i=0; i<theform.elements.length; i++){
+                    document.writeln("TYPE" + theform.elements[i].type + "=" + theform.elements[i].value );
+
+                }
+            return returnval
+        }                
+        </script>
+       
+  </head>
+  <body BGCOLOR="#eeeeee" onload="init( )">
+  
+<form onSubmit="return checkempty(this)">
+Name: <input type="text" name="yourname" /><br />
+Email: <input type="text" name="email" /><br />
+Comments: <textarea name="comments"></textarea><br />
+<input type="submit" value="submit" />
+</form>
+  </body>
+  
+  
+</html>
+
