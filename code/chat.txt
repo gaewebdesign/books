@@ -1,0 +1,239 @@
+Chat with us
+
+avatar
+Scott Am.
+Customer Support
+Verification Code: 37REJ5B6
+What can we help you with today? Billing & Account Activation
+What kind of billing or account management do you need assistance with? Payments & Renewals
+
+I used two URLS when creating this account
+IF sctennisclub.net is NOT renewed, would sctennisclub.org still work?
+Chat started
+Aneta M joined the chat
+Aneta M
+Hello Roger, thank you for contacting Billing today. My name is Aneta, and I’m happy to assist you.
+Please allow me a moment to pull up your account. This may take 3 to 5 minutes. If you have any additional details to share, feel free to send them during the hold.
+Thank you for waiting. I can see two domain registration subscriptions on your account. The domain sctennisclub.org should continue to work as long as both the hosting plan and the domain registration remain active. 
+Currently, the main domain connected to this plan is sctennisclub.net. 
+You can change this if you wish, and here is a helpful article explaining how to do so:
+https://help.inmotionhosting.com/hc/en-us/articles/360063739113-Primary-Domain-Change-via-AMP
+avatar
+ok... I was alsso try to get sctennniscluib.net to point to another host... but uncessfully
+i changed the DNS settings but it didn't work.... 
+Aneta M
+I'm sorry to hear that. Regarding the nameserver configuration, I’ll need to transfer you to our Technical Support team for further assistance. I can transfer you now if you have no further billing-related questions.
+avatar
+ok, you can transfer me, thanks
+Aneta M
+Sure, you’re welcome. Please stay on the line while I transfer you.
+avatar
+Aneta M left the chat
+Scott Am. joined the chat
+Scott Am.
+Thanks for contacting Support! My name is Scott, and I will be happy to assist you.
+avatar
+hello
+Scott Am.
+Your domains are independent of each other. So one or many domains could expire and the others would continue to work.
+avatar
+my 2nd question was --- I tried to transfer sctennisclub.net to another provider,but was unsuccessful
+I changed the primary and secondary nameservers
+Scott Am.
+So the transfer itself failed or did you just point the name servers?
+avatar
+i just change the name servers
+from ns2.inmotionhostng.co to the other provider
+Scott Am.
+I am not seeing that as done. Perhaps it was done in the wrong place. It needs to be updated in AMP > Domains > Manage Domains > Point your Domain.
+If you changed the records in cPanel that would be a different type of record (not actual NameServers)
+avatar
+I changed it back to inmotion
+Scott Am.
+Ah. Well We can change them for you but without the being pointed to the new location and propagation happening we would not be able to tell what happened.
+Or you can set them back, either way.
+avatar
+ok, give a couple minutes to cjange on muy own again
+OK, i changed the nameservers
+Scott Am.
+Name Server: ns1.a2hosting.com
+Name Server: ns2.a2hosting.com
+
+Those are correct?
+avatar
+yes
+Maybe there's something I need to do at the other end?
+Scott Am.
+So the problem is not with the name server setting that looks fine. The nameservers you set are not responding to queries for your domain.
+dig a sctennisclub.net @ns1.a2hosting.com
+
+; <<>> DiG 9.11.4-P2-RedHat-9.11.4-26.P2.el7_9.16 <<>> a sctennisclub.net @ns1.a2hosting.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: REFUSED, id: 64805
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;sctennisclub.net.              IN      A
+
+;; Query time: 4 msec
+;; SERVER: 13.248.158.180#53(13.248.158.180)
+;; WHEN: Sun Nov 30 01:16:34 EST 2025
+;; MSG SIZE  rcvd: 45
+It is providing no records.
+You would need to check with their support on why that is.
+avatar
+OK.. then I shold check with them>
+hosting.com
+Scott Am.
+Correct. A2hosting was bought by hosting.com within the last year or so.
+avatar
+ok. thanks the help!
+Scott Am.
+No problem.
+Anything else today?
+avatar
+no....maybe I''l be back in a day
+Type a message here...
+Type a message here...
+
+
+ns1.mysecurecloudhost.com
+
+ns2.mysecurecloudhost.com*
+ ns3.mysecurecloudhost.com* ns4.mysecurecloudhost.com
+
+
+ avatar
+Hosting.com
+Typically replies in a few minutes
+Today
+
+point domain from another host to hosting.com
+
+Thanks for reaching out. To point your domain to our services, you need to change the nameservers at your current registrar (where you bought the domain). What is the domain name we are working with? Once I have your domain, I can tell you the exact nameservers you need.
+
+
+Xerxes
+
+
+inmotion hosting
+
+Thanks. To look up your current nameservers and provide the correct ones, please provide the full domain name we are updating. What is the full domain name?
+
+
+Xerxes
+
+
+sctennisclub.net
+
+Inmotion Hosting is where your domain is currently hosted. To find the correct nameservers for your account and provide the right instructions, I still need the full domain name we are updating. What is the full domain name?
+
+
+Xerxes
+
+
+unsure about full domain name?
+
+The domain we are working with is sctennisclub.net. Since your domain is registered with Inmotion Hosting, you will need to log into their control panel to make the update.The nameservers you should use to point the domain to your hosting.com account are: * ns1.mysecurecloudhost.com* ns2.mysecurecloudhost.com* ns3.mysecurecloudhost.com* ns4.mysecurecloudhost.com
+
+
+**General steps to update the nameservers at your registrar:**1. Log into your account at Inmotion Hosting.2. Find the Domain Management or DNS settings section for sctennisclub.net.3. Replace their existing nameservers with the four nameservers listed above.4. Save the changes.After this change, propagation typically takes 24 to 48 hours. Do you need any assistance finding these settings in your Hosting.com control panel to verify the nameservers?
+
+
+Xerxes
+
+
+so n2.a2hostom.com is incorrect?
+
+That address, n2.a2hostom.com, appears to be an incorrect typo.
+
+The correct nameservers for sctennisclub.net are those we previously provided.
+
+Are you currently logged into your Inmotion Hosting account to update them now?
+
+
+Xerxes
+
+
+n2.a2hosting.com is incorrect
+
+
+ns2.a2hosting.com
+
+That is correct. ns2.a2hosting.com is one of our older, legacy nameservers and would still work, but the recommended ones are the mysecurecloudhost.com series.The full list you should use at Inmotion Hosting is: * ns1.mysecurecloudhost.com* ns2.mysecurecloudhost.com* ns3.mysecurecloudhost.com* ns4.mysecurecloudhost.comWere you able to log into your Inmotion Hosting account to update the nameservers, or do you need those general steps again?
+
+
+Xerxes
+
+
+I changed to
+
+Since you confirmed you made the change, would you like me to give you the resources to check the propagation status while you wait?
+
+
+Xerxes
+
+
+ns1.mysecurecloudhost.com
+
+
+yes
+
+Great! Those are the correct nameservers for pointing your domain to us. Just a reminder that DNS changes usually take 24 to 48 hours to fully update across the entire internet. You can monitor the progress of the domain propagation using free online tools like whatsmydns.net or dnschecker.org.
+
+
+Is there anything else I can help you with regarding your hosting services today?
+
+
+Xerxes
+
+
+how does it know to use the sctennisclub.net direcctory at hosting.com
+
+When you update the nameservers for sctennisclub.net to point to us, our system links that domain to your specific hosting account. It determines the correct directory based on how the domain was set up within your control panel (like cPanel).
+
+
+If you are using cPanel, the domain will typically fall into one of these two scenarios:
+
+• The Primary Domain: Files are placed in the main public_html directory.
+
+• An Addon Domain: The system creates a dedicated directory for it, usually /home/username/public_html/sctennisclub.net/ or a folder you specified.
+
+Which directory are you expecting your website files to be in?
+
+
+Xerxes
+
+
+sctennisclub.net
+
+Thanks for confirming. The location of the files for sctennisclub.net depends on how you set it up on your hosting.com account:
+
+Is it the main domain you bought the hosting account for (the primary domain), or is it an additional domain (an Addon Domain) you added later?
+
+
+Knowing this helps us confirm the correct document root path. Which directory are you expecting your website files to be in?
+
+
+Xerxes
+
+
+why is it not the same as used for goldengatetennisclub?
+
+
+ns2.a2hosting.com
+
+That is a great question. There are a couple of reasons you see different nameservers, but they are all linked to the same hosting infrastructure:
+
+
+Agent is typing a message
+Type your message
+
+No file chosen
+
+Chatwoot
+Powered by Chatwoot

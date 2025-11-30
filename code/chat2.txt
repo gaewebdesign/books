@@ -1,0 +1,142 @@
+avatar
+Hosting.com
+Typically replies in a few minutes
+Today
+
+point domain from another host to hosting.com
+
+Thanks for reaching out. To point your domain to our services, you need to change the nameservers at your current registrar (where you bought the domain). What is the domain name we are working with? Once I have your domain, I can tell you the exact nameservers you need.
+
+
+Xerxes
+
+
+inmotion hosting
+
+Thanks. To look up your current nameservers and provide the correct ones, please provide the full domain name we are updating. What is the full domain name?
+
+
+Xerxes
+
+
+sctennisclub.net
+
+Inmotion Hosting is where your domain is currently hosted. To find the correct nameservers for your account and provide the right instructions, I still need the full domain name we are updating. What is the full domain name?
+
+
+Xerxes
+
+
+unsure about full domain name?
+
+The domain we are working with is sctennisclub.net. Since your domain is registered with Inmotion Hosting, you will need to log into their control panel to make the update.The nameservers you should use to point the domain to your hosting.com account are: * ns1.mysecurecloudhost.com* ns2.mysecurecloudhost.com* ns3.mysecurecloudhost.com* ns4.mysecurecloudhost.com
+
+
+**General steps to update the nameservers at your registrar:**1. Log into your account at Inmotion Hosting.2. Find the Domain Management or DNS settings section for sctennisclub.net.3. Replace their existing nameservers with the four nameservers listed above.4. Save the changes.After this change, propagation typically takes 24 to 48 hours. Do you need any assistance finding these settings in your Hosting.com control panel to verify the nameservers?
+
+
+Xerxes
+
+
+so n2.a2hostom.com is incorrect?
+
+That address, n2.a2hostom.com, appears to be an incorrect typo.
+
+The correct nameservers for sctennisclub.net are those we previously provided.
+
+Are you currently logged into your Inmotion Hosting account to update them now?
+
+
+Xerxes
+
+
+n2.a2hosting.com is incorrect
+
+
+ns2.a2hosting.com
+
+That is correct. ns2.a2hosting.com is one of our older, legacy nameservers and would still work, but the recommended ones are the mysecurecloudhost.com series.The full list you should use at Inmotion Hosting is: * ns1.mysecurecloudhost.com* ns2.mysecurecloudhost.com* ns3.mysecurecloudhost.com* ns4.mysecurecloudhost.comWere you able to log into your Inmotion Hosting account to update the nameservers, or do you need those general steps again?
+
+
+Xerxes
+
+
+I changed to
+
+Since you confirmed you made the change, would you like me to give you the resources to check the propagation status while you wait?
+
+
+Xerxes
+
+
+ns1.mysecurecloudhost.com
+
+
+yes
+
+Great! Those are the correct nameservers for pointing your domain to us. Just a reminder that DNS changes usually take 24 to 48 hours to fully update across the entire internet. You can monitor the progress of the domain propagation using free online tools like whatsmydns.net or dnschecker.org.
+
+
+Is there anything else I can help you with regarding your hosting services today?
+
+
+Xerxes
+
+
+how does it know to use the sctennisclub.net direcctory at hosting.com
+
+When you update the nameservers for sctennisclub.net to point to us, our system links that domain to your specific hosting account. It determines the correct directory based on how the domain was set up within your control panel (like cPanel).
+
+
+If you are using cPanel, the domain will typically fall into one of these two scenarios:
+
+• The Primary Domain: Files are placed in the main public_html directory.
+
+• An Addon Domain: The system creates a dedicated directory for it, usually /home/username/public_html/sctennisclub.net/ or a folder you specified.
+
+Which directory are you expecting your website files to be in?
+
+
+Xerxes
+
+
+sctennisclub.net
+
+Thanks for confirming. The location of the files for sctennisclub.net depends on how you set it up on your hosting.com account:
+
+Is it the main domain you bought the hosting account for (the primary domain), or is it an additional domain (an Addon Domain) you added later?
+
+
+Knowing this helps us confirm the correct document root path. Which directory are you expecting your website files to be in?
+
+
+Xerxes
+
+
+why is it not the same as used for goldengatetennisclub?
+
+
+ns2.a2hosting.com
+
+That is a great question. There are a couple of reasons you see different nameservers, but they are all linked to the same hosting infrastructure:
+
+
+• Legacy Nameservers - ns2.a2hosting.com is part of an older set, often used on long-standing accounts.
+
+• Modern Nameservers - ns1/2/3/4.mysecurecloudhost.com are the modern, recommended set for pointing new domains to our service.
+
+
+The change you made for sctennisclub.net using the modern set is correct and will work perfectly.
+
+
+Regarding the directory path, to confirm where your website files should go: Did you purchase your hosting account with sctennisclub.net as the original main domain, or is it an Addon Domain you added later?
+
+
+Xerxes
+
+Type your message
+
+No file chosen
+
+Chatwoot
+Powered by Chatwoot
